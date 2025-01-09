@@ -88,7 +88,7 @@ html {
 }
 
 body {
-    font: 1.7rem Helvetica, Arial, sans-serif;
+    font: 1.7rem Roboto, serif;
     margin: 0;
     color: #000;
 }
@@ -100,11 +100,13 @@ body {
 h1 {
     color: #005800; /* MAIN COLOR DARK GREEN */
     font-size: 36px; /* H1 HEADING SIZE */
+    font-family: Tenor Sans, sans-serif;
 }
 
 h2 {
     font-size: 28px; /* H2 HEADING SIZE */
     color: #009800; /* ACCENT COLOR MED GREEN */
+    font-family: Tenor Sans, sans-serif;
 }
 
 p {
