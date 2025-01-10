@@ -76,21 +76,58 @@
   font-style: italic;
 }
 
+:root {
 
-body {
-    
-    
+  /* typography */
+  --primary-font: "Roboto", sans-serif;
+  --header-font: "Tenor Sans", sans-serif;
+  --paragraph: 1.8rem "Roboto", sans-serif;
+  --header-one-size: 3.6rem;
+  --header-two-size: 2.8rem;
+  --header-three-size: 2.4rem;
+  --primary-text-weight: 100;
+  --btn-font-size: 2rem;
+  --btn-font-weight: 500;
+
+
+  /* color */
+  --main-color: #005800;
+  --secondary-color: #676767;
+  --bg-color: #E0F2E0;
+  --accent-color: #009800;
+  --white: #fff;
+  
+
+  /* effects */
+  --shadow: 2px 2px 5px #444;
+
+  /* sizing */
+  --border-rad: 8px;
+  --border-weight: 1px;
+
+  /*shorthands*/
+  --border-shorthand: 1px solid #005800;
+  --border-btn-shorthand: 2px solid #fff;
 }
-/* GLOBAL STYLES */
+
+
+
+/*  ...........GLOBAL STYLES...........  */
 
 html {
     font-size: 10px;
 }
 
 body {
-    font: 1.7rem Roboto, serif;
-    margin: 0;
-    color: #000;
+    font: var(--paragraph);
+    color: var(--secondary-color);
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main {
+    background-color: var(--white);
 }
 
 #services, #gallery, #serviceArea {
@@ -98,61 +135,61 @@ body {
 }
 
 h1 {
-    color: #005800; /* MAIN COLOR DARK GREEN */
-    font-size: 36px; /* H1 HEADING SIZE */
-    font-family: Tenor Sans, sans-serif;
+    color: var(--main-color);
+    font-size: var(--header-one-size);
+    font-family: var(--header-font);
 }
 
 h2 {
-    font-size: 28px; /* H2 HEADING SIZE */
-    color: #009800; /* ACCENT COLOR MED GREEN */
-    font-family: Tenor Sans, sans-serif;
+    font-size: var(--header-two-size);
+    color: var(--header-color);
+    font-family: var(--header-font);
 }
 
 p {
-    color: #676767; /* DARK GRAY COLOR */
-    font-size: 18px;
     margin: 0 0 1em;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 a {
-    color: #000;
+    color: var(--accent-color);
     text-decoration: none;
     letter-spacing: .1rem;
 }
 
 .button {
-    background-color: #009800;/* ACCENT COLOR MED GREEN */
-    color: #fff;
-    padding: .5em .8em;
-    border-radius: 12px;
-    border: 1px white solid;
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    padding: .5em 1em;
+    border-radius: var(--border-rad);
+    border: var(--border-btn-shorthand);
     text-transform: uppercase;
-    box-shadow: 1px 1px gray;
+    box-shadow: var(--shadow);
 }
 
 img {
-    border: 1px solid #005800; /* MAIN COLOR DARK GREEN */
+    border: var(--border-shorthand);
 }
 
 /* NAV */
 
 
 nav { 
-    background-color: #005800; /* MAIN COLOR DARK GREEN */
+    background-color: var(--main-color);
     padding: .5rem;
-    color: white;
+    color: var(--white);
 }
 nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: white;
+    color: var(--white);
 }
 
 nav a {
-    color: white;
+    color: var(--white);
 }
 
 
@@ -163,71 +200,153 @@ nav a {
 
 /* HERO SECTION */
 
-section#hero {
+#hero article {
     background: url('../images/lawn-aeration-lg.jpg') center / cover;
-    height: 600px; 
+    height: 300px; 
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: white;
-    padding: 5%;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+   
 }
 
 #hero p {
-    font-size: 36px;
-    color: white;
-    text-shadow: 1px 1px black, 4px 4px 5px black;
+    font-size: var(--header-three-size);
+    color: var(--white);
+    font-family: var(--header-font);
+    text-shadow: var(--shadow);
+    text-align: center;
+    padding: 1.5rem;
+    
+}
+
+#hero .button { 
+    margin: auto;
+    margin-top: 11rem;
+    margin-bottom: 1rem;
+    
 }
 
 /* SERVICES SECTION */
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  
+}
 
-#services h1, #gallery h1 {
-    font-size: 4rem;
-    margin-bottom: .5em;
-    color: white;
-    background-color: #005800; /* MAIN COLOR DARK GREEN */
-    text-align: center;
+#services h1 {
+    margin-bottom: .2rem;
+    color: var(--white);
+    background-color: var(--main-color);
     text-transform: uppercase;
-    padding: 20px;
+    padding: 1.5rem;
+}
+
+#services article {
+    margin-bottom: .8rem;
+    padding: 2rem;
+
+}
+
+#services img {
+  max-width: 100%;
+  margin-bottom: 1.3rem;
+}
+
+#services h2 {
+  margin-bottom: 1.5rem;
 }
 
 h2 a {
-    color: #009800; /* ACCENT COLOR MED GREEN */
+    color: var(--main-color);
     text-decoration: underline;
+    text-align: center;
+}
+
+/* GELLERY SECTION */
+#gallery {
+  background-color: var(--main-color);
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  padding: 1.5rem 8rem;
+}
+
+#gallery h1 {
+  color: var(--white);
+}
+
+#gallery img {
+  max-width: 100%;
+  margin-top: 1.5rem;
+  border: var(--border-btn-shorthand);
+}
+
+#gallery p {
+  margin-top: 2.8rem;
+}
+
+/* SERVICE AREA SECTION */
+#serviceArea {
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+
+#serviceArea img {
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+#serviceArea p {
+  margin-top: 2.8rem;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #005800; /* MAIN COLOR DARK GREEN */
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+footer ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+footer li {
+  margin: .5rem;
+}
+
 
 footer p {
     font-size: 1.2rem;
     padding: 0 10px;
-    color: white;
+    color: var(--white);
     text-align: center;
+    line-height: .6rem;
 }
 
 i {
-    color: white;
+    color: var(--white);
 }
 
 
-/* SMALL SCREEN MEDIA QUERY */
+/*  LARGE SCREEN MEDIA QUERY */
+/*background pattern*/
 
 
+/* HAMBURGER MENU */ 
 
-/* HAMBURGER MENU - NEED HELP */ 
-
-/* IMPLEMENT MAX WIDTH ON CONTENT, MAX WIDTH=100% HEIGHT=AUTO ON IMAGES FOR RESPONSIVENESS, ALIGN EVERYTHING CENTRALLY, STACK ARTICLES ON TOP EACH OTHER IN FOOTER WITH FLEXWRAP? HERO P SHOULD HAVE MAX WIDTH OF 50% ON LARGE SCREEN */
-
-/* LARGE SCREEN HERO P SHOULD HAVE MAX WIDTH OF 50%, ARTICLE H2S/PS AND IMAGES SIDE BY SIDE, ALTERNATING (GRID-TEMPLATE-AREAS?) */
+/* BACK TO TOP ICON */
 
 
 
