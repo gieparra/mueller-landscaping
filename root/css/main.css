@@ -342,6 +342,10 @@ i {
 
 /*  LARGE SCREEN MEDIA QUERY */
 /*background pattern*/
+body {
+    background-image: url(../images/pattern.gif);
+    background-repeat: repeat;
+}
 
 
 /* HAMBURGER MENU */ 
