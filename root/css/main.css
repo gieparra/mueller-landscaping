@@ -177,6 +177,8 @@ img {
 /* Header */
 header {
   background-color: var(--main-color);
+  padding: 4rem 1rem;
+  height: 15rem;
 }
 header a {
   color: var(--white);
@@ -186,7 +188,6 @@ header nav {
   position: absolute;
   top: 7rem;
   right: 2.5rem;
-  
 }
 
 .call {
@@ -196,10 +197,14 @@ header nav {
   padding: .5rem;
 }
 
+header img {
+  position: absolute;
+  top: 6.5rem;
+}
 
 /* off-screen-menu */
 .nav {
-  background-color: var(--main-color);
+  background-color: var(--accent-color);
   height: 100vh;
   width: 100%;
   max-width: 300px;
@@ -243,7 +248,7 @@ nav {
   color: var(--white);
 }
 .nav a:hover {
-  color: var(--accent-color);
+  color: var(--main-color);
 }
 
 .nav ul {
@@ -297,9 +302,10 @@ nav {
 .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 nav { 
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     padding: .5rem;
     color: var(--white);
 }
@@ -487,14 +493,5 @@ body {
     background-image: url(../images/pattern.gif);
     background-repeat: repeat;
 }
-
-
-
-/* HAMBURGER MENU */ 
-
-/* BACK TO TOP ICON */
-
-
-
 
 
