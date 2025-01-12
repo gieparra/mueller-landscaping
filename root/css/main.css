@@ -171,10 +171,132 @@ a {
 
 img {
     border: var(--border-shorthand);
+
+}
+
+/* Header */
+header {
+  background-color: var(--main-color);
+}
+header a {
+  color: var(--white);
+
+}
+header nav {
+  position: absolute;
+  top: 7rem;
+  right: 2.5rem;
+  
+}
+
+.call {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: .5rem;
+}
+
+
+/* off-screen-menu */
+.nav {
+  background-color: var(--main-color);
+  height: 100vh;
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  top: 0;
+  right: -300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center;
+  text-align: left;
+  line-height: 5rem;
+  transition: .3s ease;
+}
+.submenu li {
+  padding-left: 25px;
+
+}
+.nav.active {
+  right: 0;
+
 }
 
 /* NAV */
+nav {
+  padding: .5rem;
+  display: flex;
+  background-color: var(--accent-color);
+  width: 6rem;
+  height: 6rem;
+  border: var(--border-btn-shorthand);
+  border-radius: var(--border-rad);
+}
 
+.nav a {
+  color: var(--white);
+}
+
+
+.nav a:visited {
+  color: var(--white);
+}
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav li {
+  margin: 0;
+  border-bottom: var(--border-shorthand);
+  
+}
+
+/* ham menu */
+.ham-menu {
+  height: 4.5rem;
+  width: 4rem;
+  margin: auto;
+  position: relative;
+}
+
+.ham-menu span {
+  height: .4rem;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+.ham-menu.active span {
+  background-color: var(--white);
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 
 nav { 
     background-color: var(--main-color);
@@ -190,7 +312,9 @@ nav ul {
 
 nav a {
     color: var(--white);
+
 }
+
 
 
 
@@ -341,11 +465,29 @@ i {
 
 
 /*  LARGE SCREEN MEDIA QUERY */
+
+
+/* Large Screen
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+nav a {
+    color: var(--white);
+}
+*/
+
+/*background pattern*/
+
 /*background pattern*/
 body {
     background-image: url(../images/pattern.gif);
     background-repeat: repeat;
 }
+
 
 
 /* HAMBURGER MENU */ 

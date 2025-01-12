@@ -34,31 +34,45 @@
     
     <body>
         <header>
+
+            <a class="call" href="tel:+16193881212">(619) 388-1212</a>
+            <a href="#"><img src="images/logo.png" alt="mueller landscape logo"></a>
+                
          
          <!-- NAVIGATION -->
-          <nav>
+         <div class="nav">
+            
+         
             <ul>
-                <li><a href="#"><img src="images/logo.png" alt="mueller landscape logo"></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/services.html">Services</a></li>
-                   
-                   <!-- SEEKING HELP HERE. NEED TO HIDE SUBMENU ITEMS UNTIL SERVICES IS CLICKED? OR DO WE USE JQUERY OR OMIT THEM FROM THE MAIN NAV? 
-                   
+                <li><a href="pages/services.html">Services</a>
+    
                     <ul class="submenu">
                         <li><a href="pages/landscape.html">Lawn & Landscape</a></li>
                         <li><a href="pages/tree.html">Tree Services</a></li>
                         <li><a href="pages/sprinkler.html">Sprinkler Services</a></li>
                         <li><a href="pages/commercial.html">Commercial Services</a></li>
                     </ul>
-                    
-                    -->
+                </li>
+        
                 <li><a href="pages/gallery.html">Gallery</a></li>
                 <li><a href="pages/faq.html">FAQ</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="tel:+16193881212">(619) 388-1212</a></li>
+                
             </ul>
-          </nav>
+       
+        </div> 
+        <nav>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </nav>
+    
+        <script src="./app.js"></script>
         </header>
           
         <!-- MAIN CONTENT -->  
@@ -147,7 +161,16 @@
             </article>
             
         </footer>
-        
+        <script>
+            const hamMenu = document.querySelector(".ham-menu");
+
+const offScreenMenu = document.querySelector(".nav");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
+        </script>
         
     </body>
     
