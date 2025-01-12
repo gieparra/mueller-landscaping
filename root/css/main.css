@@ -171,6 +171,7 @@ a {
 
 img {
     border: var(--border-shorthand);
+
 }
 
 /* Header */
@@ -219,6 +220,7 @@ header nav {
 }
 .nav.active {
   right: 0;
+
 }
 
 /* NAV */
@@ -235,6 +237,7 @@ nav {
 .nav a {
   color: var(--white);
 }
+
 
 .nav a:visited {
   color: var(--white);
@@ -294,6 +297,22 @@ nav {
 .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+
+nav { 
+    background-color: var(--main-color);
+    padding: .5rem;
+    color: var(--white);
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+nav a {
+    color: var(--white);
+
 }
 
 
@@ -447,6 +466,7 @@ i {
 
 /*  LARGE SCREEN MEDIA QUERY */
 
+
 /* Large Screen
 nav ul {
     display: flex;
@@ -461,6 +481,13 @@ nav a {
 */
 
 /*background pattern*/
+
+/*background pattern*/
+body {
+    background-image: url(../images/pattern.gif);
+    background-repeat: repeat;
+}
+
 
 
 /* HAMBURGER MENU */ 
