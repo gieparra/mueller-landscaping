@@ -138,12 +138,16 @@ h1 {
     color: var(--main-color);
     font-size: var(--header-one-size);
     font-family: var(--header-font);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: var(--header-two-size);
-    color: var(--header-color);
+    color: var(--main-color);
     font-family: var(--header-font);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 p {
