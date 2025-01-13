@@ -175,13 +175,14 @@ a {
 
 img {
     border: var(--border-shorthand);
+
 }
 
 /* Header */
 header {
   background-color: var(--main-color);
-  padding: 3rem 1rem;
-  height: 12rem;
+  padding: 4rem 1rem;
+  height: 15rem;
 }
 header a {
   color: var(--white);
@@ -189,8 +190,46 @@ header a {
 }
 header nav {
   position: absolute;
-  top: 3rem;
+  top: 7rem;
   right: 2.5rem;
+}
+
+.call {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: .5rem;
+}
+
+header img {
+  position: absolute;
+  top: 6.5rem;
+}
+
+/* off-screen-menu */
+.nav {
+  background-color: var(--accent-color);
+  height: 100vh;
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  top: 0;
+  right: -300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center;
+  text-align: left;
+  line-height: 5rem;
+  transition: .3s ease;
+}
+.submenu li {
+  padding-left: 25px;
+
+}
+.nav.active {
+  right: 0;
+
 }
 
 /* NAV */
@@ -207,6 +246,8 @@ nav {
 .nav a {
   color: var(--white);
 }
+
+
 .nav a:visited {
   color: var(--white);
 }
@@ -218,11 +259,13 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .nav li {
   margin: 0;
   border-bottom: var(--border-shorthand);
+  
 }
 
 /* ham menu */
@@ -232,6 +275,7 @@ nav {
   margin: auto;
   position: relative;
 }
+
 .ham-menu span {
   height: .4rem;
   width: 100%;
@@ -263,6 +307,7 @@ nav {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+
 nav { 
     background-color: var(--accent-color);
     padding: .5rem;
@@ -274,35 +319,19 @@ nav ul {
     justify-content: space-around;
     color: var(--white);
 }
+
 nav a {
     color: var(--white);
+
 }
 
-/* off-screen-menu */
-.nav {
-  background-color: var(--accent-color);
-  height: 100vh;
-  width: 100%;
-  max-width: 300px;
-  position: absolute;
-  top: 0;
-  right: -300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;    
-  justify-content: center;
-  text-align: left;
-  line-height: 5rem;
-  transition: .3s ease;
-}
-.submenu li {
-  padding-left: 25px;
-}
-.nav.active {
-  right: 0;
-}
+
+
 
 /* HOMEPAGE STYLING */
+
+
+
 /* HERO SECTION */
 
 #hero article {
@@ -460,6 +489,7 @@ i {
 
 
 /*  LARGE SCREEN MEDIA QUERY */
+
 @media screen and (min-width: 800px) {
 /* Header */
 header {
@@ -516,51 +546,22 @@ nav { /* This is the ham menu */
   opacity: 0;
 }
 
-.nav li:hover .submenu {
-  display: block;
-  visibility: visible;
-  opacity: 1;
-}
-
-.submenu li {
-  padding: .8rem;
-}
-.nav a {
-  color: var(--white);
-}
-.nav a:visited {
-  color: var(--white);
-}
-.nav a:hover {
-  color: var(--accent-color);
-}
 
 
-/* HERO SECTION */
-
-#hero article {
-  background: url('../images/lawn-aeration-lg.jpg') center / cover;
-  height: 518px; 
-  display: flex;
- 
+/* Large Screen
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
 }
 
-#hero p {
-  font-size: var(--header-three-size);
-  color: var(--white);
-  font-family: var(--header-font);
-  text-shadow: var(--shadow);
-  text-align: center;
-  padding: 1.5rem;
-  
+nav a {
+    color: var(--white);
 }
+*/
 
-#hero .button { 
-  margin: auto;
-  margin-top: 11rem;
-  margin-bottom: 1rem;
-  
-}
+/*background pattern*/
 
 /*background pattern*/
 body {
@@ -569,4 +570,3 @@ body {
 }
 
 
-}
