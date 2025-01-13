@@ -490,6 +490,63 @@ i {
 
 /*  LARGE SCREEN MEDIA QUERY */
 
+@media screen and (min-width: 800px) {
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* NAV */
+nav { /* This is the ham menu */
+  all: unset;
+}
+.ham-menu {
+  all: unset;
+}
+
+.nav { /* large screen menu */
+  all: unset;
+}
+
+.nav ul {
+  list-style: none;
+  color: var(--white);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  all: unset;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+  position: relative;
+}
+.nav li a{
+  display: block;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  background-color: var(--main-color);
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
+  /*transition: opacity 0s ease, visibility 0s ease;*/
+  visibility: hidden;
+  opacity: 0;
+}
+
+
 
 /* Large Screen
 nav ul {
