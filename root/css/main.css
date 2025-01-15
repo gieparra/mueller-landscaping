@@ -571,3 +571,95 @@ body {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SERVICES PAGE */
+
+
+.servicesPage h1 {
+    margin-top: 10px;
+}
+
+.pageTitle {
+    margin: 0 auto;
+    width: 92%;
+    border-top: 1px solid var(--main-color);
+}
+
+.servicesPage p {
+    padding: 13px;
+    width: 88%;
+    margin: 0 auto;
+    /*margin-bottom: 13px;*/
+    text-align: center;
+}
+
+.servicesPage article {
+    border: solid 1px var(--main-color);
+    border-radius: 15px;
+    margin: 13px;
+    text-align: center;
+    min-height: 507px;
+}
+
+.servicesPage img {
+    max-width: 88%;
+    margin: 13px 0;
+}
+
+
+/* REVIEWS SECTION FOR ALL SUBPAGES */
+
+#reviews {
+    background-color: var(--main-color);
+    color: white;
+    padding-bottom: 30px;
+}
+
+#reviews h1 {
+    color: white;
+    padding: 20px;
+}
+
+#reviews hr {
+    width: 92%;
+    color: white;
+    margin: 0 auto;
+}
+
+#reviews img {
+    display: inline-block;
+}
+
+#reviews p {
+    font-style: italic;
+    padding: 0 22.5px;
+    line-height: 1.8;
+}
+
+
+
+
+
