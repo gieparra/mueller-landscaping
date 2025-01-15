@@ -187,14 +187,14 @@ header a {
   color: var(--white);
 
 }
-header nav {
+header .nav {
   position: absolute;
   top: 3rem;
   right: 2.5rem;
 }
 
 /* NAV */
-nav {
+.nav {
   padding: .5rem;
   display: flex;
   background-color: var(--accent-color);
@@ -204,23 +204,23 @@ nav {
   border-radius: var(--border-rad);
 }
 
-.nav a {
+nav a {
   color: var(--white);
 }
-.nav a:visited {
+nav a:visited {
   color: var(--white);
 }
-.nav a:hover {
+nav a:hover {
   color: var(--main-color);
 }
 
-.nav ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.nav li {
+nav li {
   margin: 0;
   border-bottom: var(--border-shorthand);
 }
@@ -263,23 +263,23 @@ nav {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-nav { 
+.nav { 
     background-color: var(--accent-color);
     padding: .5rem;
     color: var(--white);
 }
-nav ul {
+.nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: var(--white);
 }
-nav a {
+.nav a {
     color: var(--white);
 }
 
 /* off-screen-menu */
-.nav {
+nav {
   background-color: var(--accent-color);
   height: 100vh;
   width: 100%;
@@ -298,7 +298,7 @@ nav a {
 .submenu li {
   padding-left: 25px;
 }
-.nav.active {
+nav.active {
   right: 0;
 }
 
@@ -470,18 +470,18 @@ header {
 }
 
 /* NAV */
-nav { /* This is the ham menu */
+.nav { /* This is the ham menu */
   all: unset;
 }
 .ham-menu {
   all: unset;
 }
 
-.nav { /* large screen menu */
+nav { /* large screen menu */
   all: unset;
 }
 
-.nav ul {
+nav ul {
   list-style: none;
   color: var(--white);
   display: flex;
@@ -489,14 +489,14 @@ nav { /* This is the ham menu */
   padding: 0;
 }
 
-.nav li {
+nav li {
   all: unset;
   display: flex;
   flex-wrap: wrap;
   margin: 0 1rem;
   position: relative;
 }
-.nav li a{
+nav li a{
   display: block;
 
 }
@@ -517,7 +517,7 @@ nav { /* This is the ham menu */
   opacity: 0;
 }
 
-.nav li:hover .submenu {
+nav li:hover .submenu {
   display: block;
   visibility: visible;
   opacity: 1;
@@ -526,13 +526,13 @@ nav { /* This is the ham menu */
 .submenu li {
   padding: .8rem;
 }
-.nav a {
+nav a {
   color: var(--white);
 }
-.nav a:visited {
+nav a:visited {
   color: var(--white);
 }
-.nav a:hover {
+nav a:hover {
   color: var(--accent-color);
 }
 
