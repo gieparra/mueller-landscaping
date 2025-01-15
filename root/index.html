@@ -40,7 +40,7 @@
                 
          
          <!-- NAVIGATION -->
-         <div class="nav">
+         <nav>
             
          
             <ul>
@@ -61,18 +61,30 @@
                 <li><a href="tel:+16193881212">(619) 388-1212</a></li>  
             </ul>
        
-        </div> 
-        <nav>
+        </nav> 
+
+        <section class="nav">
         <div class="ham-menu">
             <span></span>
             <span></span>
             <span></span>
           </div>
 
-        </nav>
+        </section>
     
         <script src="./app.js"></script>
         </header>
+
+        <script>
+            const hamMenu = document.querySelector(".ham-menu");
+
+const offScreenMenu = document.querySelector("nav");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
+        </script>
           
         <!-- MAIN CONTENT -->  
         
@@ -160,16 +172,7 @@
             </article>
             
         </footer>
-        <script>
-            const hamMenu = document.querySelector(".ham-menu");
 
-const offScreenMenu = document.querySelector(".nav");
-
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
-});
-        </script>
         
     </body>
     
