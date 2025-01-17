@@ -9,9 +9,11 @@
     
     <!--    fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap" rel="stylesheet">
+    
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="text/css">
     
 
     <!--   stylesheets -->
@@ -33,9 +35,141 @@
 
 
 <body>
+    <header>
+
+            <a class="call" href="tel:+16193881212">(619) 388-1212</a>
+            <a href="#"><img src="../images/logo.png" alt="mueller landscape logo"></a>
+                
+         
+         <!-- NAVIGATION -->
+         <div class="nav">
+            
+         
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a>
     
+                    <ul class="submenu">
+                        <li><a href="landscape.html">Lawn & Landscape</a></li>
+                        <li><a href="tree.html">Tree Services</a></li>
+                        <li><a href="sprinkler.html">Sprinkler Services</a></li>
+                        <li><a href="commercial.html">Commercial Services</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+       
+        </div> 
+        <nav>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </nav>
+    
+        <script src="./app.js"></script>
+        </header>
+          
+        <!-- MAIN CONTENT -->  
+        
+        <main>   
+            
+            <section class="servicesPage">
+                <h1>SERVICES</h1>
+                <hr class="pageTitle">
+                <p>We’re here to give you a beautiful, effortless landscape at home.</p>  
+                   
+                    <article class="services">
+                        <img src="../images/landscaping-maintenance-sm.jpg" alt="landscaping">
+                        <h2>LAWN & LANDSCAPE</h2>
+                        <p>Are you tired of spending your weekends sweating in the yard, tending to your garden and landscape? Let us take care of it for you! Click for more info.</p>
+                        <p><a href="lawn-landscape.html" class="button">MORE INFO: LAWN & LANDSCAPE</a></p>
+                    </article>
+                    <article class="services">
+                        <img src="../images/tree-trimming-sm.jpg" alt="tree trimming">
+                        <h2>TREE SERVICES</h2>
+                        <p>Regular tree care is essential to maintain tree health and vitality. We offer tree pruning, trimming, removal, and stump grinding. Click for more info.</p>
+                        <p><a href="tree.html" class="button">MORE INFO: TREE SERVICES</a></p>
+                    </article>
+                    <article class="services">
+                        <img src="../images/sprinkler-repair-sm.jpg" alt="sprinkler repair">
+                        <h2>SPRINKLER SERVICES</h2>
+                        <p>Want to save water, time, and money? Automate your lawn with a sprinkler system. We also offer sprinkler repair. Click for more info.</p>
+                        <p><a href="sprinkler-installation.html" class="button">MORE INFO: SPRINKLER SERVICES</a></p>
+                    </article>
+                    <article class="services">
+                        <img src="../images/commercial-maintenance-sm.jpg" alt="commercial maintenance">
+                        <h2>COMMERCIAL SERVICES</h2>
+                        <p>Are you a property manager? Get peace of mind with ongoing high-quality responsive landscape maintenance services. Click for more info.</p>
+                        <p><a href="sprinkler-installation.html" class="button">MORE INFO: COMMERCIAL SERVICES</a></p>
+                        
+                    </article>
+            </section>
+            
+            <!-- REVIEWS SECTION -->
+            
+            <section id="reviews">   
+                <h1 class="whiteH1">REVIEWS</h1>
+                <hr class="reviews">
+                <img class="centerStars" src="../images/review-stars.png" alt"5 stars">
+                <p class="reviews">“John showed up for the job early and got to work quickly and efficiently. We had trouble scheduling the job with other folks in a timely way but Mueller said no problem. We will always use them in the future!”</p>
+                <p class="reviewer">-Don G., Google Reviewer</p>
+                <hr class="reviews"> 
+            </section>
+            
+            <!-- SERVICE AREA SECTION -->
+            
+            <section id="serviceArea">
+                <h1>SERVICE AREA</h1>
+                <img src="../images/mueller-service-area.png" alt="service area map">
+                <p><a href="about.html" class="button">VIEW ALL CITIES WE SERVE</a></p>
+                
+                
+            </section>
+
+            <p><a href="#" class="button">^</a></p>
+            
+        </main>
+          
+        <!-- FOOTER -->
+        
+        <footer>
+           <article class="footer">
+               <img src="../images/logo.png" alt="mueller landscape logo">
+                <p class="phone">(619) 391-3887</p>
+                <p class="address">11774 Hi Ridge Rd, Lakeside, CA</p>
+            </article>
+            <article class="footer">    
+                <p class="days">Open Monday - Friday</p>
+                <p class="hours">8AM - 5PM</p>
+            </article>
+            <article class="footer">
+               <ul>
+                  <li><a href="https://www.facebook.com/MuellerLandscapeInc" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/muellerlandscapeinc" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/MuelleLandscape" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>  
+                <p>Copyright 2025</p>
+            </article>
+            
+        </footer>
+        <script>
+            const hamMenu = document.querySelector(".ham-menu");
+
+const offScreenMenu = document.querySelector(".nav");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
+        </script>
+        
 
 </body>
-    <footer>
-        
-    </footer>
