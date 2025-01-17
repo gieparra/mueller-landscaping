@@ -116,6 +116,8 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
+    
 }
 
 body {
@@ -171,6 +173,7 @@ a {
     border: var(--border-btn-shorthand);
     text-transform: uppercase;
     box-shadow: var(--shadow);
+    margin-bottom: 2rem;
 }
 
 img {
@@ -187,14 +190,14 @@ header a {
   color: var(--white);
 
 }
-header nav {
+header .nav {
   position: absolute;
   top: 3rem;
   right: 2.5rem;
 }
 
 /* NAV */
-nav {
+.nav {
   padding: .5rem;
   display: flex;
   background-color: var(--accent-color);
@@ -204,23 +207,23 @@ nav {
   border-radius: var(--border-rad);
 }
 
-.nav a {
+nav a {
   color: var(--white);
 }
-.nav a:visited {
+nav a:visited {
   color: var(--white);
 }
-.nav a:hover {
+nav a:hover {
   color: var(--main-color);
 }
 
-.nav ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.nav li {
+nav li {
   margin: 0;
   border-bottom: var(--border-shorthand);
 }
@@ -263,23 +266,23 @@ nav {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-nav { 
+.nav { 
     background-color: var(--accent-color);
     padding: .5rem;
     color: var(--white);
 }
-nav ul {
+.nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: var(--white);
 }
-nav a {
+.nav a {
     color: var(--white);
 }
 
 /* off-screen-menu */
-.nav {
+nav {
   background-color: var(--accent-color);
   height: 100vh;
   width: 100%;
@@ -298,11 +301,12 @@ nav a {
 .submenu li {
   padding-left: 25px;
 }
-.nav.active {
+nav.active {
   right: 0;
 }
 
 /* HOMEPAGE STYLING */
+
 /* HERO SECTION */
 
 #hero article {
@@ -333,6 +337,7 @@ nav a {
 }
 
 /* SERVICES SECTION */
+
 #services {
   display: flex;
   flex-direction: column;
@@ -371,6 +376,7 @@ h2 a {
 }
 
 /* GALLERY SECTION */
+
 #gallery {
   background-color: var(--main-color);
   flex-direction: column;
@@ -394,6 +400,7 @@ h2 a {
 }
 
 /* SERVICE AREA SECTION */
+
 #serviceArea {
   flex-direction: column;
   justify-items: center;
@@ -410,8 +417,8 @@ h2 a {
   margin-top: 2.8rem;
 }
 
-
 /* REVIEWS - SUBPAGES */
+
 #reviews{
     flex-direction: column;
     justify-items: center;
@@ -420,8 +427,6 @@ h2 a {
 #reviews img {
     border: none;
 }
-
-
 
 
 /* FOOTER */
@@ -458,6 +463,22 @@ i {
     color: var(--white);
 }
 
+/* SCROLL TO TOP BUTTON 
+
+.fa-solid fa-arrow-up {
+    border: solid 1px white;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display: block;
+} */
+
 
 /*  LARGE SCREEN MEDIA QUERY */
 @media screen and (min-width: 800px) {
@@ -470,18 +491,18 @@ header {
 }
 
 /* NAV */
-nav { /* This is the ham menu */
+.nav { /* This is the ham menu */
   all: unset;
 }
 .ham-menu {
   all: unset;
 }
 
-.nav { /* large screen menu */
+nav { /* large screen menu */
   all: unset;
 }
 
-.nav ul {
+nav ul {
   list-style: none;
   color: var(--white);
   display: flex;
@@ -489,14 +510,14 @@ nav { /* This is the ham menu */
   padding: 0;
 }
 
-.nav li {
+nav li {
   all: unset;
   display: flex;
   flex-wrap: wrap;
   margin: 0 1rem;
   position: relative;
 }
-.nav li a{
+nav li a{
   display: block;
 
 }
@@ -517,7 +538,7 @@ nav { /* This is the ham menu */
   opacity: 0;
 }
 
-.nav li:hover .submenu {
+nav li:hover .submenu {
   display: block;
   visibility: visible;
   opacity: 1;
@@ -526,13 +547,13 @@ nav { /* This is the ham menu */
 .submenu li {
   padding: .8rem;
 }
-.nav a {
+nav a {
   color: var(--white);
 }
-.nav a:visited {
+nav a:visited {
   color: var(--white);
 }
-.nav a:hover {
+nav a:hover {
   color: var(--accent-color);
 }
 
@@ -570,4 +591,127 @@ body {
 }
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SERVICES PAGE */
+
+
+.servicesPage h1 {
+    margin-top: 10px;
+}
+
+.pageTitle {
+    margin: 0 auto;
+    width: 92%;
+    border-top: 1px solid var(--main-color);
+}
+
+.servicesPage p {
+    padding: 13px;
+    width: 88%;
+    margin: 0 auto;
+    /*margin-bottom: 13px;*/
+    text-align: center;
+}
+
+.servicesPage article {
+    border: solid 1px var(--main-color);
+    border-radius: 15px;
+    margin: 13px;
+    text-align: center;
+    min-height: 507px;
+}
+
+.servicesPage img {
+    max-width: 88%;
+    margin: 13px 0;
+}
+
+.servicesPage a {
+    margin-bottom: 2rem;
+}
+
+
+/* REVIEWS SECTION FOR ALL SUBPAGES */
+
+#reviews {
+    background-color: var(--main-color);
+    color: white;
+    padding-bottom: 30px;
+}
+
+#reviews h1 {
+    color: white;
+    padding: 20px;
+}
+
+#reviews hr {
+    width: 92%;
+    color: white;
+    margin: 0 auto;
+}
+
+#reviews img {
+    display: inline-block;
+}
+
+#reviews p {
+    font-style: italic;
+    padding: 0 22.5px;
+    line-height: 1.8;
+}
+
+/* SERVICES SUBPAGES */
+
+
+servicesSubpages
+
+.valueProp {
+    text-align: center;
+    margin: 1rem;
+}
+
+.servicesSubpages img {
+    max-width: 88%;
+    margin: 13px 0;
+}
+
+aside {
+    background-color: var(--main-color);
+    color: white;
+}
+
+h3 {
+    color: white;
+    font-size: 24px;
+}
+
+aside ul {
+    list-style-type: circle;
+    color: white;
+    margin: 2rem;
+    padding: 18px;
 }

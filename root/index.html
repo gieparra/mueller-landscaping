@@ -40,7 +40,7 @@
                 
          
          <!-- NAVIGATION -->
-         <div class="nav">
+         <nav>
             
          
             <ul>
@@ -61,18 +61,30 @@
                 <li><a href="tel:+16193881212">(619) 388-1212</a></li>  
             </ul>
        
-        </div> 
-        <nav>
+        </nav> 
+
+        <section class="nav">
         <div class="ham-menu">
             <span></span>
             <span></span>
             <span></span>
           </div>
 
-        </nav>
+        </section>
     
         <script src="./app.js"></script>
         </header>
+
+        <script>
+            const hamMenu = document.querySelector(".ham-menu");
+
+            const offScreenMenu = document.querySelector("nav");
+
+            hamMenu.addEventListener("click", () => {
+            hamMenu.classList.toggle("active");
+            offScreenMenu.classList.toggle("active");
+});
+        </script>
           
         <!-- MAIN CONTENT -->  
         
@@ -82,7 +94,7 @@
             <section id="hero">
                   <article>
                   <p>Transform your outdoor space into a beautiful landscape</p>
-                  <a href="pages/contact.html" class="button">GET A QUOTE</a>
+                  <a href="pages/contact.html" class="button">Get A Quote</a>
                   </article>
             </section>
             
@@ -92,22 +104,22 @@
                 <h1>Services</h1>
                     <article>
                         <img src="images/landscaping-maintenance-sm.jpg" alt="landscaping">
-                        <h2><a href="pages/landscape.html">LAWN & LANDSCAPE</a></h2>
+                        <h2><a href="pages/landscape.html">Lawn & Landscape</a></h2>
                         <p>Regular or ongoing lawn and landscape maintenance for a beautiful yard without the work.</p>
                     </article>
                     <article>
                         <img src="images/tree-trimming-sm.jpg" alt="tree trimming">
-                        <h2><a href="pages/tree.html">TREE SERVICES</a></h2>
+                        <h2><a href="pages/tree.html">Tree Services</a></h2>
                         <p>Regular tree trimming, stump grinding and removal, and pruning the trees on your property for optimum appearance, health, and vitality.</p>
                     </article>
                     <article>
                         <img src="images/sprinkler-repair-sm.jpg" alt="sprinkler repair">
-                        <h2><a href="pages/sprinkler.html">SPRINKLER SERVICES</a></h2>
+                        <h2><a href="pages/sprinkler.html">Sprinkler Services</a></h2>
                         <p>Our sprinkler systems help you save water, money, and offer peace of mind. Keep your system in top shape with repair services.</p>
                     </article>
                     <article>
                         <img src="images/commercial-maintenance-sm.jpg" alt="commercial maintenance">
-                        <h2><a href="pages/commercial.html">COMMERCIAL SERVICES</a></h2>
+                        <h2><a href="pages/commercial.html">Commercial Services</a></h2>
                         <p>We make property managers look good. We maintain constant communication and take monthly photos to monitor the properties.</p>
                     </article>
             </section>
@@ -115,21 +127,21 @@
             <!-- GALLERY SECTION -->
             
             <section id="gallery">   
-                <h1>GALLERY</h1>
+                <h1>Gallery</h1>
                 <article>
                     <img src="images/landscaped-garden.jpg" alt="front yard landscape">
                     <img src="images/maintained-garden.jpg" alt="green lawn with trees">
                     <img src="images/polished-garden.jpg" alt="walkway garden plantings">
-                    <p><a href="pages/gallery.html" class="button">VIEW GALLERY</a></p>
+                    <p><a href="pages/gallery.html" class="button">View Gallery</a></p>
                 </article>    
             </section>
             
             <!-- SERVICE AREA SECTION -->
             
             <section id="serviceArea">
-                <h1>SERVICE AREA</h1>
+                <h1>Service Area</h1>
                 <img src="images/mueller-service-area.png" alt="service area map">
-                <p><a href="pages/about.html" class="button">VIEW ALL CITIES WE SERVE</a></p>
+                <p><a href="pages/about.html" class="button">View All Cities We Serve</a></p>
                 
                 
             </section>
@@ -160,16 +172,7 @@
             </article>
             
         </footer>
-        <script>
-            const hamMenu = document.querySelector(".ham-menu");
 
-const offScreenMenu = document.querySelector(".nav");
-
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
-});
-        </script>
         
     </body>
     
