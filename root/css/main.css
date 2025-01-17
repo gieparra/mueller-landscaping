@@ -116,6 +116,8 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
+    
 }
 
 body {
@@ -303,6 +305,7 @@ nav.active {
 }
 
 /* HOMEPAGE STYLING */
+
 /* HERO SECTION */
 
 #hero article {
@@ -333,6 +336,7 @@ nav.active {
 }
 
 /* SERVICES SECTION */
+
 #services {
   display: flex;
   flex-direction: column;
@@ -371,6 +375,7 @@ h2 a {
 }
 
 /* GALLERY SECTION */
+
 #gallery {
   background-color: var(--main-color);
   flex-direction: column;
@@ -394,6 +399,7 @@ h2 a {
 }
 
 /* SERVICE AREA SECTION */
+
 #serviceArea {
   flex-direction: column;
   justify-items: center;
@@ -410,8 +416,8 @@ h2 a {
   margin-top: 2.8rem;
 }
 
-
 /* REVIEWS - SUBPAGES */
+
 #reviews{
     flex-direction: column;
     justify-items: center;
@@ -420,8 +426,6 @@ h2 a {
 #reviews img {
     border: none;
 }
-
-
 
 
 /* FOOTER */
@@ -457,6 +461,22 @@ footer p {
 i {
     color: var(--white);
 }
+
+/* SCROLL TO TOP BUTTON 
+
+.fa-solid fa-arrow-up {
+    border: solid 1px white;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display: block;
+} */
 
 
 /*  LARGE SCREEN MEDIA QUERY */

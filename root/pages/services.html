@@ -33,7 +33,7 @@
 </head>
 
 
-<body>
+<body id="pageTop">
     <header>
 
         <a href="#"><img src="../images/logo.png" alt="mueller landscape logo"></a>
@@ -147,6 +147,7 @@
     <!-- FOOTER -->
 
     <footer>
+        
         <article class="footer">
             <img src="../images/logo.png" alt="mueller landscape logo">
             <p class="phone">(619) 391-3887</p>
@@ -162,8 +163,29 @@
                 <li><a href="https://www.instagram.com/muellerlandscapeinc" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://twitter.com/MuelleLandscape" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
             </ul>
+            
             <p>Copyright 2025</p>
         </article>
-
+        <!-- button attempt for back to top 
+        <a href="#pageTop" class="top"><i class="fa-solid fa-arrow-up"></i></a>-->
     </footer>
+    
+    <!-- button attempt for back to top 
+    
+    <script>
+        $(document).ready(function(){
+            $('.top').hide();
+            $(window).scroll(function(){
+                            if($(this).scrollTop() > 200) {
+                $('.top').fadeIn();
+            } else {
+                $('.top').fadeOut();
+            }
+          });
+        });
+    </script> -->
+    
 </body>
+
+</html>
+
