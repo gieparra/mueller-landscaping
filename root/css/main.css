@@ -173,6 +173,7 @@ a {
     border: var(--border-btn-shorthand);
     text-transform: uppercase;
     box-shadow: var(--shadow);
+    margin-bottom: 2rem;
 }
 
 img {
@@ -649,6 +650,10 @@ body {
     margin: 13px 0;
 }
 
+.servicesPage a {
+    margin-bottom: 2rem;
+}
+
 
 /* REVIEWS SECTION FOR ALL SUBPAGES */
 
@@ -679,7 +684,34 @@ body {
     line-height: 1.8;
 }
 
+/* SERVICES SUBPAGES */
 
 
+servicesSubpages
 
+.valueProp {
+    text-align: center;
+    margin: 1rem;
+}
 
+.servicesSubpages img {
+    max-width: 88%;
+    margin: 13px 0;
+}
+
+aside {
+    background-color: var(--main-color);
+    color: white;
+}
+
+h3 {
+    color: white;
+    font-size: 24px;
+}
+
+aside ul {
+    list-style-type: circle;
+    color: white;
+    margin: 2rem;
+    padding: 18px;
+}
