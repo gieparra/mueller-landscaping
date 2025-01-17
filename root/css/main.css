@@ -417,18 +417,6 @@ h2 a {
   margin-top: 2.8rem;
 }
 
-/* REVIEWS - SUBPAGES */
-
-#reviews{
-    flex-direction: column;
-    justify-items: center;
-}
-
-#reviews img {
-    border: none;
-}
-
-
 /* FOOTER */
 
 footer {
@@ -584,36 +572,42 @@ nav a:hover {
   
 }
 
-/*background pattern*/
+/* BACKGROUND PATTERN */
 body {
     background-image: url(../images/pattern.gif);
     background-repeat: repeat;
 }
+    
+    
+/* ABOUT PAGE */
 
-
+/* RESPONSIVE VIDEO */
+/*UNDER DEVELOPMENT - MP*/
+.aboutVideo {
+	position: relative; /* allows position of child of a div */
+	padding-bottom: 56.25%; /* calculated out of the aspect ratio of the original video (16:9) height of 56.25% -> 9/16=0.5625, move decimal 2 spots */
+	padding-top: 25px; /* allows video header section */
+	height: 0;
+	overflow: hidden;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*    MP TO REVIEW/SIMPLIFY BELOW */
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}    
+    
+/* FOR MEDIA QUERY @ LARGE SCREENS */
+/*        .aboutVideo {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2;
+    }*/
+    
+    
+    
 
 
 /* SERVICES PAGE */
@@ -661,6 +655,8 @@ body {
     background-color: var(--main-color);
     color: white;
     padding-bottom: 30px;
+/*    flex-direction: column;*/
+    justify-items: center; /* to center stars */
 }
 
 #reviews h1 {
@@ -676,6 +672,7 @@ body {
 
 #reviews img {
     display: inline-block;
+/*    border: none;*/
 }
 
 #reviews p {
@@ -683,6 +680,8 @@ body {
     padding: 0 22.5px;
     line-height: 1.8;
 }
+
+
 
 /* SERVICES SUBPAGES */
 
@@ -709,9 +708,17 @@ h3 {
     font-size: 24px;
 }
 
+h3.mainColor {
+    color: var(--main-color);
+}
+
 aside ul {
     list-style-type: circle;
     color: white;
     margin: 2rem;
     padding: 18px;
-}
+    }
+
+    
+    
+    
