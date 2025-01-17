@@ -336,6 +336,37 @@ nav.active {
     
 }
 
+
+/* ABOUT PAGE */
+
+/* RESPONSIVE VIDEO */
+/*UNDER DEVELOPMENT - MP*/
+.aboutVideo {
+	position: relative; /* allows position of child of a div */
+	padding-bottom: 56.25%; /* calculated out of the aspect ratio of the original video (16:9) height of 56.25% -> 9/16=0.5625, move decimal 2 spots */
+	padding-top: 25px; /* allows video header section */
+	height: 0;
+	overflow: hidden;
+}
+
+/*    MP TO REVIEW/SIMPLIFY BELOW */
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}    
+    
+/* FOR MEDIA QUERY @ LARGE SCREENS, MP TO MOVE TO CORRECT SECTION */
+/*        .aboutVideo {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2;
+    }*/
+    
+
+
+
 /* SERVICES SECTION */
 
 #services {
@@ -579,33 +610,7 @@ body {
 }
     
     
-/* ABOUT PAGE */
 
-/* RESPONSIVE VIDEO */
-/*UNDER DEVELOPMENT - MP*/
-.aboutVideo {
-	position: relative; /* allows position of child of a div */
-	padding-bottom: 56.25%; /* calculated out of the aspect ratio of the original video (16:9) height of 56.25% -> 9/16=0.5625, move decimal 2 spots */
-	padding-top: 25px; /* allows video header section */
-	height: 0;
-	overflow: hidden;
-}
-
-/*    MP TO REVIEW/SIMPLIFY BELOW */
-.video iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}    
-    
-/* FOR MEDIA QUERY @ LARGE SCREENS */
-/*        .aboutVideo {
-        grid-column: 1 / span 3;
-        grid-row: 3 / span 2;
-    }*/
-    
     
     
 
@@ -680,6 +685,8 @@ body {
     padding: 0 22.5px;
     line-height: 1.8;
 }
+
+#reviews img {
 
 
 
