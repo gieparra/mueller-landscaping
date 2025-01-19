@@ -83,15 +83,14 @@
 
     </script>
           
-    <!-- MAIN CONTENT - GALLERY PAGE-->  
-    <main class="galleryPage">
-                                
-            <section class="galleryPage">   
-                <h1>Gallery</h1>
-                <hr class="pageTitle">
-                <p class="valueProp">Explore our gallery to see how we bring polished landscapes to life</p>
-                
-                <article class="galleryPics">
+        <!-- MAIN CONTENT -->  
+                    
+            <!-- GALLERY SECTION -->
+            
+            <section id="gallery">   
+                <h1>GALLERY</h1>
+                <p>Explore our gallery to see how we bring polished landscapes to life</p>
+                <article>
                     <img src="../images/gallery1.jpeg" alt="front yard landscape">
                     <img src="../images/gallery2.jpeg" alt="green lawn with trees">
                     <img src="../images/gallery3.jpeg" alt="walkway garden plantings">
@@ -103,15 +102,14 @@
                 </article>    
             </section>
             
-            <!-- REVIEWS SECTION - MATCHED SERVICES.HTML -->
-
+            <!-- REVIEWS SECTION -->
+            <!-- REVIEW W/ TEAM: review image class, p id for reviewer name -->
+            
             <section id="reviews">
-                <h1>Reviews</h1>
-                <hr>
-                <img class="centerStars" src="../images/review-stars.png" alt="5 stars">
-                <p class="reviews">“John showed up for the job early and got to work quickly and efficiently. We had trouble scheduling the job with other folks in a timely way but Mueller said no problem. We will always use them in the future!”</p>
-                <p class="reviewer">-Don G., Google Reviewer</p>
-                <hr>
+                <h1>REVIEWS</h1>
+                <img src="../images/review-stars.png" alt="five star review">
+                <p>“John showed up for the job early and got to work quickly and efficiently. We had trouble scheduling the job with other folks in a timely way but Mueller said no problem. We will always use them in the future!”</p>
+                <p id="reviewerName">-Don G., Google Reviewer</p>
             </section>
 
             
@@ -120,37 +118,47 @@
             <section id="serviceArea">
                 <h1>SERVICE AREA</h1>
                 <img src="../images/mueller-service-area.png" alt="service area map">
-                <p><a href="about.html" class="button">View All Cities We Serve</a></p>
+                <p><a href="../pages/about.html" class="button">VIEW ALL CITIES WE SERVE</a></p>
                 
-            
+                
             </section>
 
             <p><a href="#" class="button">^</a></p>
             
         </main>
           
-        <!-- FOOTER -->
+        <!-- FOOTER, NOT SURE IF ARTICLES WILL ACHIEVE LAYOUT WE WANT W/ FLEXBOX-->
         
-    <footer>
-        
-        <article class="footer">
-            <img src="../images/logo.png" alt="mueller landscape logo">
-            <p class="phone">(619) 391-3887</p>
-            <p class="address">11774 Hi Ridge Rd, Lakeside, CA</p>
-        </article>
-        <article class="footer">
-            <p class="days">Open Monday - Friday</p>
-            <p class="hours">8AM - 5PM</p>
-        </article>
-        <article class="footer">
-            <ul>
-                <li><a href="https://www.facebook.com/MuellerLandscapeInc" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/muellerlandscapeinc" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/MuelleLandscape" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-            </ul>
+        <footer>
+           <article class="footer">
+               <img src="../images/logo.png" alt="mueller landscape logo">
+                <p class="phone">(619) 391-3887</p>
+                <p class="address">11774 Hi Ridge Rd, Lakeside, CA</p>
+            </article>
+            <article class="footer">    
+                <p class="days">Open Monday - Friday</p>
+                <p class="hours">8AM - 5PM</p>
+            </article>
+            <article class="footer">
+               <ul>
+                  <li><a href="https://www.facebook.com/MuellerLandscapeInc" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/muellerlandscapeinc" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/MuelleLandscape" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>  
+                <p>Copyright 2025</p>
+            </article>
             
         </footer>
+        <script>
+            const hamMenu = document.querySelector(".ham-menu");
 
+const offScreenMenu = document.querySelector(".nav");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
+        </script>
         
     </body>
     
