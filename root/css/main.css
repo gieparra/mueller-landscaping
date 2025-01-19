@@ -566,7 +566,7 @@ servicesSubpages .valueProp {
     text-align: center;
 }
 
-aside {
+aside { 
     background-color: var(--main-color);
     color: white;
     margin: auto;
@@ -1397,8 +1397,50 @@ textarea::placeholder {
 
 
 
+/* SERVICES PAGE MED SCREEN MEDIA QUERY */
 
+    @media screen and (min-width: 650px) {
+    /*.pageTitle {
+        margin: 0 auto;
+        width: 92%;
+        border-top: 1px solid var(--main-color);
+    }*/
 
+    .servicesPage p {
+        padding: 13px 30px;
+        width: 88%;
+        margin: 0 auto;
+        /*margin-bottom: 13px;*/
+        text-align: center;
+    }
+
+    .servicesPage article {
+        padding: 0 2%;
+        }       
+
+    @media screen and (min-width: 850px) {
+        section.servicesPageArticles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0 10px;
+        }
+        .servicesPageArticles {
+        min-width: 40%;
+        }
+        padding: 0 10px;
+    }
+}
+
+/* SERVICES PAGE LARGE SCREEN MEDIA QUERY */
+
+@media screen and (min-width: 1000px) {
+    p.reviews {
+        margin: 0 20%;
+    }
+}
+    
+    
+    
 
 
 
