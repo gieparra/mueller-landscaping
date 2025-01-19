@@ -561,18 +561,22 @@ servicesSubpages .valueProp {
 }
 
 .servicesSubpages img {
-    max-width: 88%;
+    max-width: 100%;
     margin: 13px 0;
+    text-align: center;
 }
 
 aside {
     background-color: var(--main-color);
     color: white;
+    margin: auto;
 }
 
 
 .servicesSubpages h3 {
     color: white;
+    margin: 2rem;
+    padding-top: 2rem;
 }
 
 
@@ -581,6 +585,11 @@ aside {
     color: white;
     margin: 2rem;
     padding: 18px;
+    line-height: 1.5;
+}
+
+.servicesSubpages .button {
+    margin-bottom: 2rem;
 }
 
 
