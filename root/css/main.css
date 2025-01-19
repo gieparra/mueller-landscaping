@@ -173,7 +173,6 @@ a {
     border: var(--border-btn-shorthand);
     text-transform: uppercase;
     box-shadow: var(--shadow);
-    margin-bottom: 2rem;
 }
 
 img {
@@ -649,10 +648,6 @@ body {
     margin: 13px 0;
 }
 
-.servicesPage a {
-    margin-bottom: 2rem;
-}
-
 
 /* REVIEWS SECTION FOR ALL SUBPAGES */
 
@@ -686,20 +681,19 @@ body {
     line-height: 1.8;
 }
 
+<<<<<<< HEAD
 #reviews img {
 
 
 
 /* SERVICES SUBPAGES */
+=======
+>>>>>>> parent of e1e3f85 (Merge pull request #20 from gieparra/kc)
 
 
-servicesSubpages
 
-.valueProp {
-    text-align: center;
-    margin: 1rem;
-}
 
+<<<<<<< HEAD
 .servicesSubpages img {
     max-width: 88%;
     margin: 13px 0;
@@ -729,3 +723,5 @@ aside ul {
     
     
     
+=======
+>>>>>>> parent of e1e3f85 (Merge pull request #20 from gieparra/kc)
