@@ -1,113 +1,113 @@
 .tenor-sans-regular {
-  font-family: "Tenor Sans", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Tenor Sans", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .roboto-thin {
-  font-family: "Roboto", serif;
-  font-weight: 100;
-  font-style: normal;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .roboto-light {
-  font-family: "Roboto", serif;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .roboto-regular {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .roboto-medium {
-  font-family: "Roboto", serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .roboto-bold {
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .roboto-black {
-  font-family: "Roboto", serif;
-  font-weight: 900;
-  font-style: normal;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .roboto-thin-italic {
-  font-family: "Roboto", serif;
-  font-weight: 100;
-  font-style: italic;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
 }
 
 .roboto-light-italic {
-  font-family: "Roboto", serif;
-  font-weight: 300;
-  font-style: italic;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .roboto-regular-italic {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .roboto-medium-italic {
-  font-family: "Roboto", serif;
-  font-weight: 500;
-  font-style: italic;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .roboto-bold-italic {
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .roboto-black-italic {
-  font-family: "Roboto", serif;
-  font-weight: 900;
-  font-style: italic;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: italic;
 }
 
 :root {
 
-  /* typography */
-  --primary-font: "Roboto", sans-serif;
-  --header-font: "Tenor Sans", sans-serif;
-  --paragraph: 1.8rem "Roboto", sans-serif;
-  --header-one-size: 3.6rem;
-  --header-two-size: 2.8rem;
-  --header-three-size: 2.4rem;
-  --primary-text-weight: 100;
-  --btn-font-size: 2rem;
-  --btn-font-weight: 500;
+    /* typography */
+    --primary-font: "Roboto", sans-serif;
+    --header-font: "Tenor Sans", sans-serif;
+    --paragraph: 1.8rem "Roboto", sans-serif;
+    --header-one-size: 3.6rem;
+    --header-two-size: 2.8rem;
+    --header-three-size: 2.4rem;
+    --primary-text-weight: 100;
+    --btn-font-size: 2rem;
+    --btn-font-weight: 500;
 
 
-  /* color */
-  --main-color: #005800;
-  --secondary-color: #676767;
-  --bg-color: #E0F2E0;
-  --accent-color: #009800;
-  --white: #fff;
-  
+    /* color */
+    --main-color: #005800;
+    --secondary-color: #676767;
+    --bg-color: #E0F2E0;
+    --accent-color: #009800;
+    --white: #fff;
 
-  /* effects */
-  --shadow: 2px 2px 5px #444;
 
-  /* sizing */
-  --border-rad: 8px;
-  --border-weight: 1px;
+    /* effects */
+    --shadow: 2px 2px 5px #444;
 
-  /*shorthands*/
-  --border-shorthand: 1px solid #005800;
-  --border-btn-shorthand: 2px solid #fff;
+    /* sizing */
+    --border-rad: 8px;
+    --border-weight: 1px;
+
+    /*shorthands*/
+    --border-shorthand: 1px solid #005800;
+    --border-btn-shorthand: 2px solid #fff;
 }
 
 
@@ -130,7 +130,9 @@ main {
     background-color: var(--white);
 }
 
-#services, #gallery, #serviceArea {
+#services,
+#gallery,
+#serviceArea {
     margin-bottom: 20px;
 }
 
@@ -149,6 +151,13 @@ h2 {
     text-align: center;
     text-transform: uppercase;
 }
+
+h3 {
+    font-size: var(--header-three-size);
+    color: var(--main-color);
+    font-family: var(--header-font);
+}
+
 
 p {
     margin: 0 0 1em;
@@ -179,127 +188,143 @@ img {
 
 /* Header */
 header {
-  background-color: var(--main-color);
-  padding: 3rem 1rem;
-  height: 12rem;
+    background-color: var(--main-color);
+    padding: 3rem 1rem;
+    height: 12rem;
 }
+
 header a {
-  color: var(--white);
+    color: var(--white);
 
 }
+
 header .nav {
-  position: absolute;
-  top: 3rem;
-  right: 2.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 2.5rem;
 }
 
 /* NAV */
 .nav {
-  padding: .5rem;
-  display: flex;
-  background-color: var(--accent-color);
-  width: 6rem;
-  height: 6rem;
-  border: var(--border-btn-shorthand);
-  border-radius: var(--border-rad);
+    padding: .5rem;
+    display: flex;
+    background-color: var(--accent-color);
+    width: 6rem;
+    height: 6rem;
+    border: var(--border-btn-shorthand);
+    border-radius: var(--border-rad);
 }
 
 nav a {
-  color: var(--white);
+    color: var(--white);
 }
+
 nav a:visited {
-  color: var(--white);
+    color: var(--white);
 }
+
 nav a:hover {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-  margin: 0;
-  border-bottom: var(--border-shorthand);
+    margin: 0;
+    border-bottom: var(--border-shorthand);
 }
 
 /* ham menu */
 .ham-menu {
-  height: 4.5rem;
-  width: 4rem;
-  margin: auto;
-  position: relative;
+    height: 4.5rem;
+    width: 4rem;
+    margin: auto;
+    position: relative;
 }
+
 .ham-menu span {
-  height: .4rem;
-  width: 100%;
-  background-color: var(--white);
-  border-radius: 1rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: .3s ease;
+    height: .4rem;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
 }
+
 .ham-menu span:nth-child(1) {
-  top: 25%;
+    top: 25%;
 }
+
 .ham-menu span:nth-child(3) {
-  top: 75%;
+    top: 75%;
 }
+
 .ham-menu.active span {
-  background-color: var(--white);
+    background-color: var(--white);
 }
+
 .ham-menu.active span:nth-child(1) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
+
 .ham-menu.active span:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
+
 .ham-menu.active span:nth-child(3) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
-.nav { 
+
+.nav {
     background-color: var(--accent-color);
     padding: .5rem;
     color: var(--white);
 }
+
 .nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: var(--white);
 }
+
 .nav a {
     color: var(--white);
 }
 
 /* off-screen-menu */
 nav {
-  background-color: var(--accent-color);
-  height: 100vh;
-  width: 100%;
-  max-width: 300px;
-  position: absolute;
-  top: 0;
-  right: -300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;    
-  justify-content: center;
-  text-align: left;
-  line-height: 5rem;
-  transition: .3s ease;
+    background-color: var(--accent-color);
+    height: 100vh;
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 5rem;
+    transition: .3s ease;
 }
+
 .submenu li {
-  padding-left: 25px;
+    padding-left: 25px;
 }
+
 nav.active {
-  right: 0;
+    right: 0;
 }
 
 /* HOMEPAGE STYLING */
@@ -307,12 +332,12 @@ nav.active {
 
 #hero article {
     background: url('../images/lawn-aeration-lg.jpg') center / cover;
-    height: 300px; 
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     text-align: center;
-   
+
 }
 
 #hero p {
@@ -322,23 +347,23 @@ nav.active {
     text-shadow: var(--shadow);
     text-align: center;
     padding: 1.5rem;
-    
+
 }
 
-#hero .button { 
+#hero .button {
     margin: auto;
     margin-top: 11rem;
     margin-bottom: 1rem;
-    
+
 }
 
 /* SERVICES SECTION */
 #services {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  text-align: center;
-  
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+
 }
 
 #services h1 {
@@ -356,12 +381,12 @@ nav.active {
 }
 
 #services img {
-  max-width: 100%;
-  margin-bottom: 1.3rem;
+    max-width: 100%;
+    margin-bottom: 1.3rem;
 }
 
 #services h2 {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 a {
@@ -372,52 +397,53 @@ h2 a {
 
 /* GALLERY SECTION */
 #gallery {
-  background-color: var(--main-color);
-  flex-direction: column;
-  justify-items: center;
-  text-align: center;
-  padding: 1.5rem 8rem;
+    background-color: var(--main-color);
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    padding: 1.5rem 8rem;
 }
 
 #gallery h1 {
-  color: var(--white);
+    color: var(--white);
 }
 
 #gallery img {
-  max-width: 100%;
-  margin-top: 1.5rem;
-  border: var(--border-btn-shorthand);
+    max-width: 100%;
+    margin-top: 1.5rem;
+    border: var(--border-btn-shorthand);
 }
 
 #gallery p {
-  margin-top: 2.8rem;
+    margin-top: 2.8rem;
 }
 
 /* SERVICE AREA SECTION */
 #serviceArea {
-  flex-direction: column;
-  justify-items: center;
-  text-align: center;
-  padding: 1.5rem 2rem;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    padding: 1.5rem 2rem;
 }
 
 #serviceArea img {
-  max-width: 100%;
-  margin-top: 1.5rem;
+    max-width: 100%;
+    margin-top: 1.5rem;
 }
 
 #serviceArea p {
-  margin-top: 2.8rem;
+    margin-top: 2.8rem;
 }
+
 /* REVIEWS - SUBPAGES */
 
-#reviews{
-  flex-direction: column;
-  justify-items: center;
+#reviews {
+    flex-direction: column;
+    justify-items: center;
 }
 
 #reviews img {
-  border: none;
+    border: none;
 }
 
 /* FOOTER */
@@ -431,14 +457,14 @@ footer {
 }
 
 footer ul {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    justify-content: center;
 }
 
 footer li {
-  margin: .5rem;
+    margin: .5rem;
 }
 
 
@@ -454,104 +480,107 @@ i {
     color: var(--white);
 }
 
+
+
+/* HEADING h1 FOR ALL SUBPAGES - INCLUDES: about.html, services.html (+ sub-services), gallery.html, faq.html, contact.html */
+.pageName {
+    margin-top: 10px;
+}
+
+
 /* SERVICES PAGE */
 
 
-.servicesPage h1 {
-  margin-top: 10px;
-}
-
 .pageTitle {
-  margin: 0 auto;
-  width: 92%;
-  border-top: 1px solid var(--main-color);
+    margin: 0 auto;
+    width: 92%;
+    border-top: 1px solid var(--main-color);
 }
 
 .servicesPage p {
-  padding: 13px;
-  width: 88%;
-  margin: 0 auto;
-  /*margin-bottom: 13px;*/
-  text-align: center;
+    padding: 13px;
+    width: 88%;
+    margin: 0 auto;
+    /*margin-bottom: 13px;*/
+    text-align: center;
 }
 
 .servicesPage article {
-  border: solid 1px var(--main-color);
-  border-radius: 15px;
-  margin: 13px;
-  text-align: center;
-  min-height: 507px;
+    border: solid 1px var(--main-color);
+    border-radius: 15px;
+    margin: 13px;
+    text-align: center;
+    min-height: 507px;
 }
 
 .servicesPage img {
-  max-width: 88%;
-  margin: 13px 0;
+    max-width: 88%;
+    margin: 13px 0;
 }
 
 .servicesPage a {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 
 /* REVIEWS SECTION FOR ALL SUBPAGES */
 
 #reviews {
-  background-color: var(--main-color);
-  color: white;
-  padding-bottom: 30px;
+    background-color: var(--main-color);
+    color: white;
+    padding-bottom: 30px;
 }
 
 #reviews h1 {
-  color: white;
-  padding: 20px;
+    color: white;
+    padding: 20px;
 }
 
 #reviews hr {
-  width: 92%;
-  color: white;
-  margin: 0 auto;
+    width: 92%;
+    color: white;
+    margin: 0 auto;
 }
 
 #reviews img {
-  display: inline-block;
+    display: inline-block;
 }
 
 #reviews p {
-  font-style: italic;
-  padding: 0 22.5px;
-  line-height: 1.8;
+    font-style: italic;
+    padding: 0 22.5px;
+    line-height: 1.8;
 }
 
 /* SERVICES SUBPAGES */
 
 
-servicesSubpages
-
-.valueProp {
-  text-align: center;
-  margin: 1rem;
+servicesSubpages .valueProp {
+    text-align: center;
+    margin: 1rem;
 }
 
 .servicesSubpages img {
-  max-width: 88%;
-  margin: 13px 0;
+    max-width: 88%;
+    margin: 13px 0;
 }
 
 aside {
-  background-color: var(--main-color);
-  color: white;
+    background-color: var(--main-color);
+    color: white;
 }
 
-h3 {
-  color: white;
-  font-size: 24px;
+
+.servicesSubpages h3 {
+    color: white;
 }
+
 
 .servicesSubpages ul {
-  list-style-type: circle;
-  color: white;
-  margin: 2rem;
-  padding: 18px;
+    list-style-type: circle;
+    color: white;
+    margin: 2rem;
+    padding: 18px;
 }
 
 
@@ -568,6 +597,66 @@ h3 {
 
 
 
+/* ABOUT PAGE STYLING */
+#aboutPage h3 {
+    margin-bottom: 1rem;        
+}
+
+.aboutPage h3, .valueProp {
+    text-align: center;
+}
+
+.aboutAside {
+    background: white;
+}
+
+.aboutVideo {
+    margin: 2rem;
+    text-align-last: center;
+    /* MP TO ADD CODE FOR RESPONSIVE VIDEO */
+}
+
+.allCities {
+    color: var(--secondary-color);
+    list-style: inside;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+/*    text-align: center;*/
+    /* MP TO TROUBLESHOOT THIS ABOVE LINE */
+}
+
+
+
+
+
+
+
+/*  GALLERY PAGE STYLING */
+
+#galleryPage p {
+    text-align: center;
+    margin: 1rem;
+}
+
+#galleryPage .galleryPics img {
+    width: 90%;
+    margin: auto;
+    display: block;
+    padding: 1rem;
+    border: none;
+}
+
+#galleryPage #reviews {
+    margin-top: 1rem;
+}
+
+/*
+.galleryPics {
+    display: block;
+    justify-content: center;
+    height: auto;
+}
+*/
 
 
 
@@ -579,21 +668,27 @@ h3 {
 
 
 
+/* FAQ PAGE STYLING */
+.question {
+    max-width: 800px;
+}
 
+#faqPage h3, #faqPage p {
+    margin: 2rem;        
+}
 
+#faqPage hr {
+    width: 90%;
+    color: white;
+/*    margin: 0 auto;*/
+    color: var(--main-color);
+/* MP LOOK INTO CHANGING THIS TO BORDER BOTTOM   */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.question ul {
+    list-style: inside;
+    margin-left: 2rem;
+}
 
 
 
@@ -1001,469 +1096,150 @@ h3 {
 
 /* Call us and schedule */
 .contactAside {
-  display: block;
-  justify-items: center; 
-  background-color: var(--white);
+    display: block;
+    justify-items: center;
+    background-color: var(--white);
 }
+
 .contactAside p {
-  padding: 3rem;
-  line-height: 2.5rem;
-  color: var(--secondary-color);
+    padding: 3rem;
+    line-height: 2.5rem;
+    color: var(--secondary-color);
 }
+
 .contactAside .hours {
-  display: block;
-  margin-top: 1.5rem;
-  margin-bottom: -1.5rem;
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: -1.5rem;
 }
+
 .telNum {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--main-color);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-color);
 }
+
 .phoneIcon {
-  width: 2rem;
-  height: 2rem;
-  text-align: left;
-  fill: var(--accent-color);
-  padding-right: .5rem;
-  position: relative;
-  top: .3rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: left;
+    fill: var(--accent-color);
+    padding-right: .5rem;
+    position: relative;
+    top: .3rem;
 }
+
 /* Fieldset and Form */
 fieldset {
-  border: var(--border-shorthand);
-  padding: 2rem;
-  margin: 1rem 3rem;
+    border: var(--border-shorthand);
+    padding: 2rem;
+    margin: 1rem 3rem;
 }
+
 form {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
+
 input {
-  box-sizing: border-box;
-  border: var(--border-shorthand);
-  width: 100%;
-  height: auto;
-  padding: 2rem;
-  margin: auto;
-  margin-bottom: 3rem;
-  font-size: 1.8rem;
-  color: var(--secondary-color);
-}
-input:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-.listGrid ul{
-  width: 100%;
-  padding-right: 2rem;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 2rem;
-  grid-auto-flow: column;
-}
-.listGrid li:nth-child(1) {
-grid-column: span 2;
-}
-select {
-  box-sizing: border-box;
-  border: var(--border-shorthand);
-  width: 100%;
-  height: auto;
-  padding: 2rem;
-  margin: auto;
-  margin-bottom: 3rem;
-  font-size: 1.8rem;
-  color: var(--secondary-color);
-  appearance: none; /* Removes native arrow */
-  -webkit-appearance: none; /* For Safari */
-  -moz-appearance: none; /* For Firefox */
-  background: transparent;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath d="M7 10l5 5 5-5z" fill="%23676767" /%3E%3C/svg%3E'); /* Custom arrow color */
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 3.5rem; 
-}
-select:focus {
-border-color: var(--accent-color);
-outline: none;
-}
-textarea {
-  width: 100%;
-  height: 150px;
-  padding: 5px;
-  box-sizing: border-box;
-  box-sizing: border-box;
-  border: var(--border-shorthand); 
-}
-input::placeholder {
-  font-size: 1.8rem;
-}
-textarea::placeholder {
-  font-size: 1.8rem;
-}
-/* Checklist Area */
-.subheadList {
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-}
-.radCheck {
-  padding: 0 .5rem;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: 2em;  
-}
-.radCheck li {
-  margin-bottom: .5rem;
-}
-.radCheck label {
-  margin: 1rem; 
-}
-.radCheck input[type="checkbox"] {
-  width: 2.1rem;
-  height: 2.1rem;
-  accent-color: var(--accent-color);
-  border: var(--border-shorthand);
-  margin: 1rem auto;
-  position: relative;
-  top: .3rem;
-}
-.parted {
-  margin-bottom: 2rem;
-}
-
-
-
-/***************** LARGE SCREEN MEDIA QUERY *****************/
-@media screen and (min-width: 800px) {
-  /* Header */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  
-  /* NAV */
-  .nav { /* This is the ham menu */
-    all: unset;
-  }
-  .ham-menu {
-    all: unset;
-  }
-  nav { /* large screen menu */
-    all: unset;
-  }
-  nav ul {
-    list-style: none;
-    color: var(--white);
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  nav li {
-    all: unset;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 1rem;
-    position: relative;
-  }
-  nav li a{
-    display: block;
-  }
-  .menu {
-    position: relative;
-    display: inline-block;
-  }
-  .submenu {
-    position: absolute;
-    top: 100%;
-    background-color: var(--main-color);
-    min-width: 160px;
-    padding: 12px 16px;
-    z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-  }
-  nav li:hover .submenu {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-  }
-  .submenu li {
-    padding: .8rem;
-  }
-  nav a {
-    color: var(--white);
-  }
-  nav a:visited {
-    color: var(--white);
-  }
-  nav a:hover {
-    color: var(--accent-color);
-  }
-  main {
-    padding-top: 1rem;
-  }
-  
-  
-  /* HERO SECTION */
-  #hero article {
-    background: url('../images/lawn-aeration-lg.jpg') center / cover;
-    height: 518px; 
-    display: flex;
-  }
-  
-  #hero p {
-    font-size: var(--header-three-size);
-    color: var(--white);
-    font-family: var(--header-font);
-    text-shadow: var(--shadow);
-    text-align: center;
-    padding: 1.5rem;
-  }
-  
-  #hero .button { 
-    margin: auto;
-    margin-top: 11rem;
-    margin-bottom: 1rem; 
-  }
-  
-  /*background pattern*/
-  body {
-      background-image: url(../images/pattern.gif);
-      background-repeat: repeat;
-  }
-  /*large screen form*/
-  .contactSection {
-    display: inline-flex;
-  }
-  .contactAside {
-    width: 40%;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* END OF HERO AND SERVICES SECTION */
-
-  
-  }  /* END OF LARGE SCREEN MIN 800PX*/
-
-  /***** LARGE SCREEN MIN 900PX */
-  @media screen and (min-width: 900px) {
-
-    /*large screen form*/
-  /* City, State and Zip */
-  .listGrid ul{
-    margin: 0;
+    box-sizing: border-box;
+    border: var(--border-shorthand);
     width: 100%;
-    padding-right: 4rem;
+    height: auto;
+    padding: 2rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.listGrid ul {
+    width: 100%;
+    padding-right: 2rem;
     display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: 1fr;
-    gap: 2rem;
-    grid-auto-flow: row;
-  }
-  .listGrid li:nth-child(1) {
-  all: unset;
-  }
-  textarea {
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2rem;
+    grid-auto-flow: column;
+}
+
+.listGrid li:nth-child(1) {
+    grid-column: span 2;
+}
+
+select {
+    box-sizing: border-box;
+    border: var(--border-shorthand);
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    appearance: none;
+    /* Removes native arrow */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+    background: transparent;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath d="M7 10l5 5 5-5z" fill="%23676767" /%3E%3C/svg%3E');
+    /* Custom arrow color */
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 3.5rem;
+}
+
+select:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+textarea {
     width: 100%;
     height: 150px;
     padding: 5px;
     box-sizing: border-box;
     box-sizing: border-box;
-    border: var(--border-shorthand); 
-  }
-  input::placeholder {
+    border: var(--border-shorthand);
+}
+
+input::placeholder {
     font-size: 1.8rem;
-  }
-  textarea::placeholder {
+}
+
+textarea::placeholder {
     font-size: 1.8rem;
-  }
-  /* Checklist Area */
-  .subheadList {
+}
+
+/* Checklist Area */
+.subheadList {
     margin-bottom: 1.5rem;
     font-weight: 700;
-  }
-  .radCheck {
+}
+
+.radCheck {
     padding: 0 .5rem;
     margin: 0;
     display: grid;
-    grid-template-columns: 25% 30%;
-    column-gap: 2em;  
-  }
-  .radCheck li {
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+}
+
+.radCheck li {
     margin-bottom: .5rem;
-  }
-  .radCheck label {
-    margin: 1rem; 
-  }
-  .radCheck input[type="checkbox"] {
+}
+
+.radCheck label {
+    margin: 1rem;
+}
+
+.radCheck input[type="checkbox"] {
     width: 2.1rem;
     height: 2.1rem;
     accent-color: var(--accent-color);
@@ -1471,45 +1247,139 @@ textarea::placeholder {
     margin: 1rem auto;
     position: relative;
     top: .3rem;
-  }
-  .parted {
+}
+
+.parted {
     margin-bottom: 2rem;
-  }
-  .contactSection {
-    width: 100%;
-    margin: 0;
-    padding: 2rem 6rem;
-    display: grid;
-    grid-template-columns: 1fr 70%;
-    column-gap: 1rem;
-  }
-  .contactAside {
-    width: 100%;
-    padding: 0;
-    margin: -.5rem;
-  }
-  form {
-    width: 100%;
-    padding: 0;
-    margin: -.5rem;
-  }
- 
+}
+
+
+
+/***************** LARGE SCREEN MEDIA QUERY *****************/
+@media screen and (min-width: 800px) {
+
+    /* Header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    /* NAV */
+    .nav {
+        /* This is the ham menu */
+        all: unset;
+    }
+
+    .ham-menu {
+        all: unset;
+    }
+
+    nav {
+        /* large screen menu */
+        all: unset;
+    }
+
+    nav ul {
+        list-style: none;
+        color: var(--white);
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        all: unset;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 1rem;
+        position: relative;
+    }
 
+    nav li a {
+        display: block;
+    }
 
+    .menu {
+        position: relative;
+        display: inline-block;
+    }
 
+    .submenu {
+        position: absolute;
+        top: 100%;
+        background-color: var(--main-color);
+        min-width: 160px;
+        padding: 12px 16px;
+        z-index: 1;
+        visibility: hidden;
+        opacity: 0;
+    }
 
+    nav li:hover .submenu {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
 
+    .submenu li {
+        padding: .8rem;
+    }
 
+    nav a {
+        color: var(--white);
+    }
 
+    nav a:visited {
+        color: var(--white);
+    }
 
+    nav a:hover {
+        color: var(--accent-color);
+    }
 
+    main {
+        padding-top: 1rem;
+    }
 
 
+    /* HERO SECTION */
+    #hero article {
+        background: url('../images/lawn-aeration-lg.jpg') center / cover;
+        height: 518px;
+        display: flex;
+    }
 
+    #hero p {
+        font-size: var(--header-three-size);
+        color: var(--white);
+        font-family: var(--header-font);
+        text-shadow: var(--shadow);
+        text-align: center;
+        padding: 1.5rem;
+    }
 
+    #hero .button {
+        margin: auto;
+        margin-top: 11rem;
+        margin-bottom: 1rem;
+    }
 
+    /*background pattern*/
+    body {
+        background-image: url(../images/pattern.gif);
+        background-repeat: repeat;
+    }
 
+    /*large screen form*/
+    .contactSection {
+        display: inline-flex;
+    }
 
+    .contactAside {
+        width: 40%;
+    }
 
 
 
@@ -1669,31 +1539,292 @@ textarea::placeholder {
 
 
 
-  
 
 
-} /* END OF LARGE SCREEN MIN 900PX */
 
 
 
 
 
+    /* END OF HERO AND SERVICES SECTION */
 
 
+}
 
+/* END OF LARGE SCREEN MIN 800PX*/
 
+/***** LARGE SCREEN MIN 900PX */
+@media screen and (min-width: 900px) {
 
+    /*large screen form*/
+    /* City, State and Zip */
+    .listGrid ul {
+        margin: 0;
+        width: 100%;
+        padding-right: 4rem;
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+        grid-auto-flow: row;
+    }
 
+    .listGrid li:nth-child(1) {
+        all: unset;
+    }
 
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 5px;
+        box-sizing: border-box;
+        box-sizing: border-box;
+        border: var(--border-shorthand);
+    }
 
+    input::placeholder {
+        font-size: 1.8rem;
+    }
 
+    textarea::placeholder {
+        font-size: 1.8rem;
+    }
 
+    /* Checklist Area */
+    .subheadList {
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
 
+    .radCheck {
+        padding: 0 .5rem;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 25% 30%;
+        column-gap: 2em;
+    }
 
+    .radCheck li {
+        margin-bottom: .5rem;
+    }
 
+    .radCheck label {
+        margin: 1rem;
+    }
 
+    .radCheck input[type="checkbox"] {
+        width: 2.1rem;
+        height: 2.1rem;
+        accent-color: var(--accent-color);
+        border: var(--border-shorthand);
+        margin: 1rem auto;
+        position: relative;
+        top: .3rem;
+    }
 
+    .parted {
+        margin-bottom: 2rem;
+    }
 
+    .contactSection {
+        width: 100%;
+        margin: 0;
+        padding: 2rem 6rem;
+        display: grid;
+        grid-template-columns: 1fr 70%;
+        column-gap: 1rem;
+    }
 
+    .contactAside {
+        width: 100%;
+        padding: 0;
+        margin: -.5rem;
+    }
 
+    form {
+        width: 100%;
+        padding: 0;
+        margin: -.5rem;
+    }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* END OF LARGE SCREEN MIN 900PX */
