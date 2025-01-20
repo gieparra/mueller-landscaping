@@ -525,7 +525,9 @@ i {
 /* SERVICES SUBPAGES */
 
 
-.servicesSubpages .valueProp {
+servicesSubpages
+
+.valueProp {
   text-align: center;
   margin: 1rem;
 }
