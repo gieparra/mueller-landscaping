@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport">
-    <title>Mueller Landscaping - Gallery</title>
+    <title>Gallery</title>
 
     <!--    fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,18 +18,36 @@
 
     <!--   stylesheets -->
     <!--   updated links for pages -->
+    <!--   order for gallery page ONLY: 1. lightbox, 2. reset, 3. main -->
 
+    <link href="../css/lightbox.min.css" rel="stylesheet" type="text/css">
     <link href="../css/reset.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
 
+    <!-- jquery lightbox link ONLY APPLICABLE for gallery page -->
+    <script src="../scripts/lightbox.min.js"></script>
+    
     <!-- jquery after stylesheets -->
 
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
+
+    
+    <!-- script for gallery lightbox - APPLICABLE ONLY TO GALLERY PAGE -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        });
+    </script>
+   
+   
     <script>
         $(document).ready(function() {});
 
     </script>
+
+
 </head>
 
 
@@ -37,9 +55,9 @@
     <header>
 
         <a href="#"><img src="../images/logo.png" alt="mueller landscape logo"></a>
-        
+
         <!-- NAVIGATION -->
-        
+
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -82,75 +100,107 @@
         });
 
     </script>
-          
-        <!-- MAIN CONTENT -->  
-                    
-            <!-- GALLERY SECTION -->
-            
-            <section id="gallery">   
-                <h1>GALLERY</h1>
-                <p>Explore our gallery to see how we bring polished landscapes to life</p>
-                <article>
-                    <img src="../images/gallery1.jpeg" alt="front yard landscape">
-                    <img src="../images/gallery2.jpeg" alt="green lawn with trees">
-                    <img src="../images/gallery3.jpeg" alt="walkway garden plantings">
-                    <img src="../images/gallery4.jpeg" alt="front yard landscape">
-                    <img src="../images/gallery5.jpeg" alt="green lawn with trees">
-                    <img src="../images/gallery6.jpeg" alt="walkway garden plantings">
-                    <img src="../images/gallery7.jpeg" alt="front yard landscape">
-                    <img src="../images/gallery8.jpeg" alt="green lawn with trees">
-                </article>    
-            </section>
-            
-            <!-- REVIEWS SECTION -->
-            <!-- REVIEW W/ TEAM: review image class, p id for reviewer name -->
-            
-            <section id="reviews">
-                <h1>REVIEWS</h1>
-                <img src="../images/review-stars.png" alt="five star review">
-                <p>“John showed up for the job early and got to work quickly and efficiently. We had trouble scheduling the job with other folks in a timely way but Mueller said no problem. We will always use them in the future!”</p>
-                <p id="reviewerName">-Don G., Google Reviewer</p>
-            </section>
 
-            
-            <!-- SERVICE AREA SECTION -->
-            
-            <section id="serviceArea">
-                <h1>SERVICE AREA</h1>
-                <img src="../images/mueller-service-area.png" alt="service area map">
-                <p><a href="../pages/about.html" class="button">VIEW ALL CITIES WE SERVE</a></p>
-                
-                
-            </section>
+    <!-- MAIN CONTENT - GALLERY PAGE-->
+    <main id="galleryPage">
 
-            <p><a href="#" class="button">^</a></p>
-            
-        </main>
-          
-        <!-- FOOTER, NOT SURE IF ARTICLES WILL ACHIEVE LAYOUT WE WANT W/ FLEXBOX-->
-        
-        <footer>
-           <article class="footer">
-               <img src="../images/logo.png" alt="mueller landscape logo">
-                <p class="phone">(619) 391-3887</p>
-                <p class="address">11774 Hi Ridge Rd, Lakeside, CA</p>
-            </article>
-            <article class="footer">    
-                <p class="days">Open Monday - Friday</p>
-                <p class="hours">8AM - 5PM</p>
-            </article>
-            <article class="footer">
-               <ul>
-                  <li><a href="https://www.facebook.com/MuellerLandscapeInc" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/muellerlandscapeinc" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a href="https://twitter.com/MuelleLandscape" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                </ul>  
-                <p>Copyright 2025</p>
-            </article>
-            
-        </footer>
+        <section class="galleryPage">
+            <h1 class="pageName">Gallery</h1>
+            <hr class="pageTitle">
+            <p class="valueProp">Explore our gallery to see how we bring polished landscapes to life</p>
 
-        
-    </body>
-    
+                <!-- JQUERY LIGHTBOX TO DISPLAY GALLERY IMAGES -->
+                <!-- unordered list with class -->
+                <ul class="galleryPics">
+                    <li>
+                        <a href="../images/gallery1.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery1.jpeg" alt="green lawn with flowers">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../images/gallery2.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery2.jpeg" alt="green lawn with flowers">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../images/gallery3.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery3.jpeg" alt="green lawn with flowers">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../images/gallery4.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery4.jpeg" alt="green lawn with flowers">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../images/gallery5.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery5.jpeg" alt="green lawn with flowers">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../images/gallery6.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery6.jpeg" alt="green lawn with flowers">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../images/gallery7.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery7.jpeg" alt="green lawn with flowers">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../images/gallery8.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery8.jpeg" alt="green lawn with flowers">
+                        </a>
+                    </li>                 
+                </ul>
+        </section>
+
+        <!-- REVIEWS SECTION - MATCHED SERVICES.HTML -->
+
+        <section id="reviews">
+            <h1>Reviews</h1>
+            <hr>
+            <img class="centerStars" src="../images/review-stars.png" alt="5 stars">
+            <p class="reviews">“John showed up for the job early and got to work quickly and efficiently. We had trouble scheduling the job with other folks in a timely way but Mueller said no problem. We will always use them in the future!”</p>
+            <p class="reviewer">-Don G., Google Reviewer</p>
+            <hr>
+        </section>
+
+
+        <!-- SERVICE AREA SECTION -->
+
+        <section id="serviceArea">
+            <h1>Service Area</h1>
+            <img src="../images/mueller-service-area.png" alt="service area map">
+            <p><a href="about.html" class="button">View All Cities</a></p>
+
+
+        </section>
+
+        <p><a href="#" class="button">^</a></p>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <article class="footer">
+            <img src="../images/logo.png" alt="mueller landscape logo">
+            <p class="phone">(619) 391-3887</p>
+            <p class="address">11774 Hi Ridge Rd, Lakeside, CA</p>
+        </article>
+        <article class="footer">
+            <p class="days">Open Monday - Friday</p>
+            <p class="hours">8AM - 5PM</p>
+        </article>
+        <article class="footer">
+            <ul>
+                <li><a href="https://www.facebook.com/MuellerLandscapeInc" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/muellerlandscapeinc" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/MuelleLandscape" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+
+            <p>Copyright 2025</p>
+        </article>
+        <!-- button attempt for back to top 
+        <a href="#pageTop" class="top"><i class="fa-solid fa-arrow-up"></i></a>-->
+    </footer>
+
+    <script src="../scripts/lightbox.min.js"></script>
+
+</body>
+
 </html>
