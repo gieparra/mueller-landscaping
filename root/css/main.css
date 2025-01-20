@@ -622,17 +622,38 @@ aside {
 .aboutPage h3,
 .valueProp {
     text-align: center;
+    padding: 0 2.5rem;
 }
 
 .aboutAside {
     background: white;
 }
 
-.aboutVideo {
+/* RESPONSIVE VIDEO CSS */
+.video {
+    position: relative;
+    /* allows position of child of a div */
+    padding-bottom: 56.25%;
+    /* calculated out of the aspect ratio of the original video (16:9) height of 56.25% -> 9/16=0.5625, move decimal 2 spots */
+    padding-top: 2rem;
+    /* allows video header section */
+    height: 0;
+    overflow: hidden;
     margin: 2rem;
-    text-align-last: center;
-    /* MP TO ADD CODE FOR RESPONSIVE VIDEO */
 }
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* ASIDE CLASS="aboutAside" FOR LIST OF ALL CITIES */
 
 .allCities {
     color: var(--secondary-color);
@@ -642,7 +663,6 @@ aside {
     /*    text-align: center;*/
     /* MP TO TROUBLESHOOT THIS ABOVE LINE */
 }
-
 
 
 
