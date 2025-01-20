@@ -671,30 +671,39 @@ aside {
 
 /*  GALLERY PAGE STYLING */
 
+.galleryPage {
+    margin: 0 1rem;
+}
+
 #galleryPage p {
     text-align: center;
     margin: 1rem;
 }
 
 #galleryPage .galleryPics img {
-    width: 90%;
-    margin: auto;
-    display: block;
-    padding: 1rem;
-    border: none;
+    max-width: 100%;
+    height: auto;
 }
 
 #galleryPage #reviews {
     margin-top: 1rem;
 }
 
-/*
-.galleryPics {
-    display: block;
+#galleryPage ul {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    height: auto;
 }
-*/
+
+#galleryPage ul li {
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+}
 
 
 
