@@ -116,18 +116,22 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
+
 }
 
 body {
     font: var(--paragraph);
     color: var(--secondary-color);
-    min-width: 320px;
-    max-width: 1200px;
-    margin: auto;
+    min-width: 376px;
+    margin: 0;
 }
 
 main {
     background-color: var(--white);
+    margin: auto;
+    max-width: 1200px;
+    padding: 1rem 0;
 }
 
 #services,
@@ -330,6 +334,10 @@ nav.active {
 /* HOMEPAGE STYLING */
 /* HERO SECTION */
 
+#hero {
+    margin-top: -1.1rem;
+}
+
 #hero article {
     background: url('../images/lawn-aeration-lg.jpg') center / cover;
     height: 300px;
@@ -337,7 +345,6 @@ nav.active {
     flex-direction: column;
     justify-items: center;
     text-align: center;
-
 }
 
 #hero p {
@@ -456,8 +463,14 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+    width: 100%;
 }
 
+footer img {
+    margin-bottom: 1rem;
+    width: 227px;
+}
 footer ul {
     display: flex;
     flex-direction: row;
@@ -466,16 +479,16 @@ footer ul {
 }
 
 footer li {
-    margin: .5rem;
+    margin: .7rem;
 }
 
 
 footer p {
-    font-size: 1.2rem;
-    padding: 0 10px;
+    font-size: 1.5rem;
+    padding: 0 1rem;
     color: var(--white);
     text-align: center;
-    line-height: .6rem;
+    line-height: .7rem;
 }
 
 i {
@@ -984,21 +997,6 @@ aside {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACT PAGE */
 
 /* Call us and schedule */
@@ -1160,7 +1158,24 @@ textarea::placeholder {
     margin-bottom: 2rem;
 }
 
+/* submit button */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end of submit button */
 
 /***************** LARGE SCREEN MEDIA QUERY *****************/
     /* SERVICES PAGE MED SCREEN MEDIA QUERY */
@@ -1206,8 +1221,55 @@ textarea::placeholder {
         text-align: left;
         margin: 2rem 10.8rem;
     }
-
+    section.servicesPageArticles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 10px;
     }
+
+    .servicesPageArticles {
+        min-width: 40%;
+        padding: 0 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    } /* END OF SCREEN MIN 600 */
+
+
 /***** LARGE SCREEN MIN 750PX */
 @media screen and (min-width: 750px) {
         main.servicesSubpages {
@@ -1233,9 +1295,7 @@ textarea::placeholder {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-    
     }
-
     #hero p {
         padding: 0;
         width: 17.8rem;
@@ -1246,9 +1306,111 @@ textarea::placeholder {
         margin: 2rem 10.8rem;
     }
 
-      
+    
+    /* Home Page Services Section */
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* End of home page services section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    } /* END OF SCREEN MIN 750 */
     
 /***** LARGE SCREEN MIN 800PX */
 @media screen and (min-width: 800px) {
@@ -1279,23 +1441,128 @@ textarea::placeholder {
         margin: -.5rem;
     }
 
-}
+    /* FOOTER 800px */
 
-/***** LARGE SCREEN MIN 850PX */
-@media screen and (min-width: 850px) {
-    section.servicesPageArticles {
+    footer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+    }
+        
+    footer img {
+        width: 169px;
     }
 
-    .servicesPageArticles {
-        min-width: 40%;
-        padding: 0 10px;
+    .footerLeft {
+        display: grid;
+        justify-items: start;
+        text-align: left;
     }
+    .footerRight {
+        display: grid;
+        justify-items: end;
+        text-align: right;
+    }
+
+
+        /* Home Page Gallery Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    /* End of home page Gallery section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} /* END OF SCREEN MIN 800 */
 
 /***** LARGE SCREEN MIN 900PX */
 @media screen and (min-width: 900px) {
@@ -1477,7 +1744,50 @@ main {
         margin: -.5rem;
     }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} /* END OF SCREEN MIN 900 */
 
 
 /***** LARGE SCREEN MIN 1000PX */
@@ -1485,7 +1795,39 @@ main {
     p.reviews {
         margin: 0 20%;
     }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} /* END OF SCREEN MIN 1000 */
 
 
 
