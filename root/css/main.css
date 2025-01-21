@@ -371,7 +371,8 @@ nav.active {
     color: var(--white);
     background-color: var(--main-color);
     text-transform: uppercase;
-    padding: 1.5rem;
+    padding: 2rem;
+   
 }
 
 #services article {
@@ -419,6 +420,7 @@ h2 a {
 }
 
 /* SERVICE AREA SECTION */
+
 #serviceArea {
     flex-direction: column;
     justify-items: center;
@@ -997,149 +999,6 @@ aside {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACT PAGE */
 
 /* Call us and schedule */
@@ -1304,141 +1163,10 @@ textarea::placeholder {
 
 
 /***************** LARGE SCREEN MEDIA QUERY *****************/
-@media screen and (min-width: 800px) {
-
-    /* Header */
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem;
-    }
-
-    /* NAV */
-    .nav {
-        /* This is the ham menu */
-        all: unset;
-    }
-
-    .ham-menu {
-        all: unset;
-    }
-
-    nav {
-        /* large screen menu */
-        all: unset;
-    }
-
-    nav ul {
-        list-style: none;
-        color: var(--white);
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav li {
-        all: unset;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 1rem;
-        position: relative;
-    }
-
-    nav li a {
-        display: block;
-    }
-
-    .menu {
-        position: relative;
-        display: inline-block;
-    }
-
-    .submenu {
-        position: absolute;
-        top: 100%;
-        background-color: var(--main-color);
-        min-width: 160px;
-        padding: 12px 16px;
-        z-index: 1;
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    nav li:hover .submenu {
-        display: block;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .submenu li {
-        padding: .8rem;
-    }
-
-    nav a {
-        color: var(--white);
-    }
-
-    nav a:visited {
-        color: var(--white);
-    }
-
-    nav a:hover {
-        color: var(--accent-color);
-    }
-
-    main {
-        padding-top: 1rem;
-    }
-
-
-    /* HERO SECTION */
-    #hero article {
-        background: url('../images/lawn-aeration-lg.jpg') center / cover;
-        height: 518px;
-        display: flex;
-    }
-
-    #hero p {
-        font-size: var(--header-three-size);
-        color: var(--white);
-        font-family: var(--header-font);
-        text-shadow: var(--shadow);
-        text-align: center;
-        padding: 1.5rem;
-    }
-
-    #hero .button {
-        margin: auto;
-        margin-top: 11rem;
-        margin-bottom: 1rem;
-    }
-
-    /*background pattern*/
-    body {
-        background-image: url(../images/pattern.gif);
-        background-repeat: repeat;
-    }
-
-    /*large screen form*/
-    .contactSection {
-        display: inline-flex;
-    }
-
-    .contactAside {
-        width: 40%;
-    }
-
-
-
-
-
-
-
-
     /* SERVICES PAGE MED SCREEN MEDIA QUERY */
 
-    @media screen and (min-width: 650px) {
+/***** LARGE SCREEN MIN 650PX */
+@media screen and (min-width: 650px) {
         /*.pageTitle {
         margin: 0 auto;
         width: 92%;
@@ -1455,217 +1183,208 @@ textarea::placeholder {
 
         .servicesPage article {
             padding: 0 2%;
-        }
+        }        
+        
+        #hero article {
+        background: url('../images/lawn-aeration-lg.jpg') center / cover;
+        height: 500px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        transition: .3s ease;
+    
     }
 
-    @media screen and (min-width: 850px) {
-        section.servicesPageArticles {
+    #hero p {
+        padding: 0;
+        width: 17.8rem;
+        
+    }    
+      #hero p,
+      #hero .button {
+        text-align: left;
+        margin: 2rem 10.8rem;
+    }
+
+    }
+/***** LARGE SCREEN MIN 750PX */
+@media screen and (min-width: 750px) {
+        main.servicesSubpages {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0 10px;
+            grid-template-columns: 2fr, 1fr;
+        }
+        main.servicesSubpages {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            column-gap: 20px;
+            padding: 3rem;
+        }
+    
+        .servicesSubpages p {
+            text-align: left;
         }
 
-        .servicesPageArticles {
-            min-width: 40%;
-        }
+/* HERO SECTION */
+    #hero article {
+        background: url('../images/lawn-aeration-lg.jpg') center / cover;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    
+    }
 
+    #hero p {
+        padding: 0;
+        width: 17.8rem;
+    }    
+      #hero p,
+      #hero .button {
+        text-align: left;
+        margin: 2rem 10.8rem;
+    }
+
+      
+
+    }
+    
+/***** LARGE SCREEN MIN 800PX */
+@media screen and (min-width: 800px) {
+
+    /*background pattern*/
+    body {
+        background-image: url(../images/pattern.gif);
+        background-repeat: repeat;
+    }
+    .contactSection {
+        width: 100%;
+        margin: 0;
+        padding: 2rem 6rem;
+        display: grid;
+        grid-template-columns: 1fr 70%;
+        column-gap: 1rem;
+    }
+
+    .contactAside {
+        width: 100%;
+        padding: 0;
+        margin: -.5rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 0;
+        margin: -.5rem;
+    }
+
+}
+
+/***** LARGE SCREEN MIN 850PX */
+@media screen and (min-width: 850px) {
+    section.servicesPageArticles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 10px;
+    }
+
+    .servicesPageArticles {
+        min-width: 40%;
         padding: 0 10px;
     }
+
+    
 }
-
-/* SERVICES PAGE LARGE SCREEN MEDIA QUERY */
-
-@media screen and (min-width: 1000px) {
-    p.reviews {
-        margin: 0 20%;
-    }
-}
-
-
-@media screen and (min-width: 750px) {
-    main.servicesSubpages {
-        display: grid;
-        grid-template-columns: 2fr, 1fr;
-    }
-}
-
-
-/* SERVICES SUBPAGE MED SCREEN */
-@media screen and (min-width: 750px) {
-    main.servicesSubpages {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 20px;
-        padding: 3rem;
-    }
-
-    .servicesSubpages p {
-        text-align: left;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* END OF HERO AND SERVICES SECTION */
-
-
-}
-
-/* END OF LARGE SCREEN MIN 800PX*/
 
 /***** LARGE SCREEN MIN 900PX */
 @media screen and (min-width: 900px) {
+
+/* NAV MENU */
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* NAV */
+.nav {
+    /* This is the ham menu */
+    all: unset;
+}
+
+.ham-menu {
+    all: unset;
+}
+
+nav {
+    /* large screen menu */
+    all: unset;
+}
+
+nav ul {
+    list-style: none;
+    color: var(--white);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+    position: relative;
+}
+
+nav li a {
+    display: block;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    background-color: var(--main-color);
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav li:hover .submenu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu li {
+    padding: .8rem;
+}
+
+nav a {
+    color: var(--white);
+}
+
+nav a:visited {
+    color: var(--white);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    padding-top: 1rem;
+}
 
     /*large screen form*/
     /* City, State and Zip */
@@ -1758,184 +1477,25 @@ textarea::placeholder {
         margin: -.5rem;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
-/* END OF LARGE SCREEN MIN 900PX */
+
+/***** LARGE SCREEN MIN 1000PX */
+@media screen and (min-width: 1000px) {
+    p.reviews {
+        margin: 0 20%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
