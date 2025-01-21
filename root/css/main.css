@@ -570,6 +570,7 @@ i {
 .subpageImage {
     background: url('../images/landscaping-maintenance-lg.jpg') center / cover;
     height: 300px;
+    display: flex;
 }
 .servicesSubpages .valueProp {
     text-align: center;
@@ -754,7 +755,6 @@ aside {
     list-style: inside;
     margin-left: 2rem;
 }
-
 
 
 
@@ -1358,6 +1358,7 @@ textarea::placeholder {
         .subpageImage {
             background: url('../images/landscaping-maintenance-lg.jpg') center / cover;
             height: 500px;
+            display: flex;
         }
         div.servicesSubpages {
             display: grid;
@@ -1390,8 +1391,44 @@ textarea::placeholder {
         margin: 2rem 10.8rem;
     }
 
-    
     /* Home Page Services Section */
+    .servicesHP-imageLeft img {
+        float: left;
+        margin: 5rem;
+        max-height: 265px;
+        max-width: 490px;
+
+        
+    }
+    .servicesHP-imageLeft::after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        margin-bottom: 1em;
+    }
+    .servicesHP-imageLeft h2 {
+        margin-top: 8rem;
+        
+        
+    }
+    .servicesHP-imageLeft h2, p {
+       text-align: left;
+       margin-right: 2rem;
+    }
+
+    .servicesHP-imageRight img {
+        float: right;
+        margin-left: 1em;
+        height: 265px;
+    }
+    .servicesHP-imageRight::after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        margin-bottom: 1em;
+    }
 
 
 
@@ -1407,43 +1444,7 @@ textarea::placeholder {
 
 
 
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* End of home page services section */
+ /* End of home page services section */
 
 
 
