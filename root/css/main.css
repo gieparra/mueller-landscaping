@@ -1355,7 +1355,7 @@ textarea::placeholder {
     /* SERVICES SUBPAGES */
         main.servicesSubpages {
             display: grid;
-            grid-template-columns: 2fr, 1fr;    
+            grid-template-columns: 2fr 1fr;    
         }
         .landscapeSubpageImage {
             background: url('../images/landscaping-maintenance-lg.jpg') center / cover;
