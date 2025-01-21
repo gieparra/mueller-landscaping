@@ -573,6 +573,25 @@ i {
     display: flex;
 }
 
+.treeSubpageImage {
+    background: url('../images/tree-trimming-sm.jpg') center / cover;
+    height: 300px;
+    display: flex;
+}
+
+.sprinklerSubpageImage {
+    background: url('../images/sprinkler-services-sm.jpg') center / cover;
+    height: 300px;
+    display: flex;
+}
+
+.commercialSubpageImage {
+    background: url('../images/commercial-maintenance-sm.jpg') center / cover;
+    height: 300px;
+    display: flex;
+}
+
+
 
 
 
@@ -638,7 +657,12 @@ aside {
     margin-bottom: 2rem;
 }
 
-
+ul.tree {
+    list-style-type: circle;
+    color: var(--secondary-color);
+    line-height: 1.5;
+    margin-left: 4rem;
+}
 
 
 
@@ -1362,6 +1386,21 @@ textarea::placeholder {
             height: 500px;
             display: flex;
         }
+        .treeSubpageImage {
+            background: url('../images/tree-trimming-lg.jpg') center / cover;
+            height: 500px;
+            display: flex;
+            }
+        .sprinklerSubpageImage {
+            background: url('../images/sprinkler-services.jpg') center / cover;
+            height: 500px;
+            display: flex;
+            }
+        .commercialSubpageImage {
+            background: url('../images/commercial-maintenance-lg.jpg') center / cover;
+            height: 500px;
+            display: flex;
+            }
     
     
     
