@@ -18,14 +18,14 @@
 
     <!--   stylesheets -->
     <!--   updated links for pages -->
-    <!--   order for gallery page ONLY: 1. lightbox, 2. reset, 3. main -->
+    <!--   order for gallery page ONLY: 1. jquery lightbox, 2. reset, 3. main -->
 
     <link href="../css/lightbox.min.css" rel="stylesheet" type="text/css">
     <link href="../css/reset.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
 
     <!-- jquery lightbox link ONLY APPLICABLE for gallery page -->
-    <script src="../scripts/lightbox.min.js"></script>
+    <script src="../scripts/lightbox-plus-jquery.min.js"></script>
     
     <!-- jquery after stylesheets -->
 
@@ -37,7 +37,8 @@
     <script>
         lightbox.option({
             'resizeDuration': 200,
-            'wrapAround': true
+            'wrapAround': true,
+            'alwaysShowNavOnTouchDevices': true
         });
     </script>
    
@@ -113,21 +114,24 @@
                 <!-- unordered list with class -->
                 <ul class="galleryPics">
                     <li>
-                        <a href="../images/gallery1.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery1.jpeg" alt="green lawn with flowers">
+                        <a href="../images/lawn-flowers-lg.jpg" data-lightbox="gallery" data-title="beautiful lawn with flowers"><img src="../images/lawn-flowers-sm.jpg" alt="green lawn with flowers">
                         </a>
                     </li>
                     <li>
-                        <a href="../images/gallery2.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery2.jpeg" alt="green lawn with flowers">
+                        <a href="../images/lawn-flowers-trees-lg.jpg" data-lightbox="gallery" data-title="green lawn with flowers and trees"><img src="../images/lawn-flowers-trees-sm.jpg" alt="green lawn with flowers and trees">
                         </a>
                     </li>
                     <li>
-                        <a href="../images/gallery3.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery3.jpeg" alt="green lawn with flowers">
+                        <a href="../images/backyard-landscape-lg.jpg" data-lightbox="gallery" data-title="green backyard with shrubs"><img src="../images/backyard-landscape-sm.jpg" alt="green backyard with shrubs">
                         </a>
                     </li>
                     <li>
-                        <a href="../images/gallery4.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery4.jpeg" alt="green lawn with flowers">
+                        <a href="../images/trees-lg.jpg" data-lightbox="gallery" data-title="trimmed trees over green lawn"><img src="../images/trees-sm.jpg" alt="trimmed trees over green lawn">
                         </a>
                     </li>
+                    
+    <!--  MP TO FINISH UPDATING THESE IMAGES!!!! -->
+                   
                     <li>
                         <a href="../images/gallery5.jpeg" data-lightbox="gallery" data-title="beautiful lawn with flower beds"><img src="../images/gallery5.jpeg" alt="green lawn with flowers">
                         </a>
