@@ -567,8 +567,8 @@ i {
 }
 
 /* SERVICES SUBPAGES */
-.subpageImage {
-    background: url('../images/landscaping-maintenance-lg.jpg') center / cover;
+.landscapeSubpageImage {
+    background: url('../images/landscaping-maintenance-sm.jpg') center / cover;
     height: 300px;
     display: flex;
 }
@@ -1355,7 +1355,7 @@ textarea::placeholder {
             display: grid;
             grid-template-columns: 2fr, 1fr;    
         }
-        .subpageImage {
+        .landscapeSubpageImage {
             background: url('../images/landscaping-maintenance-lg.jpg') center / cover;
             height: 500px;
             display: flex;
