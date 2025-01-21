@@ -637,6 +637,9 @@ aside {
     margin: auto;
 }
 
+.servicesSubpages h2 {
+    padding-top: 2rem;
+}
 
 .servicesSubpages h3 {
     color: white;
