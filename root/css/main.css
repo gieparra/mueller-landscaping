@@ -287,11 +287,11 @@ nav li {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-
 .nav {
     background-color: var(--accent-color);
     padding: .5rem;
     color: var(--white);
+    z-index: 15;
 }
 
 .nav ul {
@@ -304,7 +304,6 @@ nav li {
 .nav a {
     color: var(--white);
 }
-
 /* off-screen-menu */
 nav {
     background-color: var(--accent-color);
@@ -321,8 +320,8 @@ nav {
     text-align: left;
     line-height: 5rem;
     transition: .3s ease;
+    z-index: 10;
 }
-
 .submenu li {
     padding-left: 25px;
 }
@@ -753,6 +752,7 @@ aside {
     list-style: inside;
     margin-left: 2rem;
 }
+
 
 
 
