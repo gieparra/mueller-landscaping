@@ -372,7 +372,7 @@ nav.active {
 
 }
 
-#services h1 {
+.servHomepage {
     margin-bottom: .2rem;
     color: var(--white);
     background-color: var(--main-color);
@@ -803,33 +803,6 @@ ul.tree {
     list-style: inside;
     margin-left: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1457,59 +1430,47 @@ textarea::placeholder {
     }
 
     /* Home Page Services Section */
-    .servicesHP-imageLeft img {
-        float: left;
-        margin: 5rem;
-        max-height: 265px;
-        max-width: 490px;
-
-        
+    #services {
+        margin: 4.4rem 7rem;
+        transition: .3s ease;
     }
-    .servicesHP-imageLeft::after {
-        clear: both;
-        content: "";
-        display: block;
-        height: 0;
-        margin-bottom: 1em;
+    #services article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    margin: 2.3rem;
+    padding: 0;
+    column-gap: 7rem;
+    }
+    #services img { 
+    grid-row: 1/span 2;
+    margin-bottom: 1.8rem; 
+    }
+    .servicesHP-imageLeft h2, 
+    .servicesHP-imageLeft p{
+        text-align: left;
+    }
+    .servicesHP-imageLeft p{
+        max-width: 320px;
     }
     .servicesHP-imageLeft h2 {
-        margin-top: 8rem;
-        
-        
+        align-self: end;
     }
-    .servicesHP-imageLeft h2, p {
-       text-align: left;
-       margin-right: 2rem;
-    }
-
     .servicesHP-imageRight img {
-        float: right;
-        margin-left: 1em;
-        height: 265px;
+        grid-column: 2; /* Image in the second column */
     }
-    .servicesHP-imageRight::after {
-        clear: both;
-        content: "";
-        display: block;
-        height: 0;
-        margin-bottom: 1em;
+    .servicesHP-imageRight h2,
+    .servicesHP-imageRight p{
+        grid-column: 1;
+        text-align: right;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* End of home page services section */
+    .servicesHP-imageRight p{
+        padding-left: .5rem;
+    }
+    .servicesHP-imageRight h2 {
+        align-self: end;
+    }
+/* End of home page services section */
 
 
 
