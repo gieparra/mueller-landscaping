@@ -997,33 +997,6 @@ ul.tree {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACT PAGE */
 
 /* Call us and schedule */
@@ -1459,6 +1432,7 @@ textarea::placeholder {
     /* Home Page Services Section */
     #services {
         margin: 4.4rem 7rem;
+        transition: .3s ease;
     }
     #services article {
     display: grid;
@@ -1496,19 +1470,6 @@ textarea::placeholder {
     .servicesHP-imageRight h2 {
         align-self: end;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* End of home page services section */
 
 
