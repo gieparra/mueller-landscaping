@@ -570,10 +570,6 @@ i {
 .subpageImage {
     background: url('../images/landscaping-maintenance-lg.jpg') center / cover;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    text-align: center;
 }
 .servicesSubpages .valueProp {
     text-align: center;
@@ -758,6 +754,10 @@ aside {
     list-style: inside;
     margin-left: 2rem;
 }
+
+
+
+
 
 
 
@@ -1398,7 +1398,7 @@ textarea::placeholder {
 
 
 
-    
+
 
 
 
