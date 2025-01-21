@@ -1275,10 +1275,16 @@ textarea::placeholder {
         main.servicesSubpages {
             display: grid;
             grid-template-columns: 2fr, 1fr;
+            
         }
-        main.servicesSubpages {
+        div.subpageImage {
+            max-width: 100%;
+            height: auto;
+    }
+        div.servicesSubpages {
             display: grid;
             grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
             column-gap: 20px;
             padding: 3rem;
         }
@@ -1410,7 +1416,7 @@ textarea::placeholder {
 
 
 
-    } /* END OF SCREEN MIN 750 */
+} /* END OF SCREEN MIN 750 */
     
 /***** LARGE SCREEN MIN 800PX */
 @media screen and (min-width: 800px) {
