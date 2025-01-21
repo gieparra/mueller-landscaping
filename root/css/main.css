@@ -1234,13 +1234,31 @@ textarea::placeholder {
 
     /* GALLERY PAGE MED SCREEN MEDIA QUERY */
 
-
-
-
-
-
-
-
+/*
+    #galleryPage .galleryPics img {
+        max-width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }    
+*/
+    
+    #galleryPage ul {
+        max-width: 1050px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        justify-content: center;
+    }
+    
+    .galleryPics {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #galleryPage ul li {
+        padding: 0;
+        margin: 0;
+    }
 
 
 
@@ -1319,33 +1337,15 @@ textarea::placeholder {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
 
-
-
+    
+    
+    
+    
+    
+    
+    
     } /* END OF SCREEN MIN 650 */
 
 
