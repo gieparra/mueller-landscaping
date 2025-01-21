@@ -567,8 +567,14 @@ i {
 }
 
 /* SERVICES SUBPAGES */
-
-
+.subpageImage {
+    background: url('../images/landscaping-maintenance-lg.jpg') center / cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
 .servicesSubpages .valueProp {
     text-align: center;
     margin: 1rem;
@@ -752,13 +758,6 @@ aside {
     list-style: inside;
     margin-left: 2rem;
 }
-
-
-
-
-
-
-
 
 
 
@@ -1354,13 +1353,12 @@ textarea::placeholder {
 @media screen and (min-width: 750px) {
         main.servicesSubpages {
             display: grid;
-            grid-template-columns: 2fr, 1fr;
-            
+            grid-template-columns: 2fr, 1fr;    
         }
-        div.subpageImage {
-            max-width: 100%;
-            height: auto;
-    }
+        .subpageImage {
+            background: url('../images/landscaping-maintenance-lg.jpg') center / cover;
+            height: 500px;
+        }
         div.servicesSubpages {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -1399,6 +1397,8 @@ textarea::placeholder {
 
 
 
+
+    
 
 
 
