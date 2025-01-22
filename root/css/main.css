@@ -997,9 +997,6 @@ ul.tree {
 
 
 
-
-
-
 /* CONTACT PAGE */
 
 /* Call us and schedule */
@@ -1162,16 +1159,15 @@ textarea::placeholder {
 }
 
 /* submit button */
-
-
-
-
-
-
-
-
-
-
+.submitMail {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.submitMail .button {
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+}
 
 
 
