@@ -291,7 +291,7 @@ nav li {
     background-color: var(--accent-color);
     padding: .5rem;
     color: var(--white);
-    z-index: 15;
+    z-index: 11;
 }
 
 .nav ul {
@@ -405,24 +405,27 @@ h2 a {
 /* GALLERY SECTION */
 #gallery {
     background-color: var(--main-color);
+    padding: 1.5rem 8rem;
+}
+.galleryRow {
+    display: flex;
     flex-direction: column;
     justify-items: center;
     text-align: center;
-    padding: 1.5rem 8rem;
 }
-
 #gallery h1 {
     color: var(--white);
+    margin: 2rem auto;
 }
-
 #gallery img {
-    max-width: 100%;
-    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 325px;
+    margin: 2rem auto;
     border: var(--border-btn-shorthand);
 }
-
 #gallery p {
-    margin-top: 2.8rem;
+    margin: 4rem auto;
+    text-align: center;
 }
 
 /* SERVICE AREA SECTION */
@@ -1580,12 +1583,33 @@ textarea::placeholder {
     }
 
 
-        /* Home Page Gallery Section */
-
-
-
-
-
+    /* Home Page Gallery Section */
+    #gallery {
+        padding: 2rem;
+        margin: auto;
+        transition: .3s ease;
+    }
+    #gallery article {
+        display: flex;
+        justify-content: center;
+    }
+    .galleryRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+    #gallery h1 {
+        margin: 2rem auto;
+    }
+    #gallery img {
+        max-width: 325px;
+        margin: 1rem;
+        width: 100%;
+    }
+    #gallery p {
+        margin: 3rem auto;
+    }
 
 
 
@@ -1606,31 +1630,7 @@ textarea::placeholder {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    /* End of home page Gallery section */
+/* End of home page Gallery section */
 
 
 
