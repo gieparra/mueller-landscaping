@@ -107,13 +107,22 @@
                     </legend>
 
                     <ul class="client">
-                        <li><input type="text" id="name" name="name" placeholder="*Your name" required></li>
-     
-                        <li><input type="email" id="email" name="email" placeholder="*Email" required></li>
-     
-                        <li><input type="tel" id="phone" name="phone" placeholder="Phone Number"></li>
-
-                         <li><input type="text" id="address" name="address" placeholder="*Address" required></li>  
+                        
+                        <li>
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" required></li>
+                        
+                        <li>
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required></li>
+                        
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"></li>
+                        
+                         <li>
+                            <label for="address">Address*</label>
+                            <input type="text" id="address" name="address" required></li>  
 
                     </ul>
 
@@ -121,6 +130,7 @@
         <div class="listGrid">
         <ul>
             <li>
+                <label for="city">City</label>
                 <select id="city" name="city" required>
                     <option value="" disabled selected>Select City</option>
                
@@ -159,12 +169,15 @@
                 </select>
             </li>
             <li>
+                <label for="state">State</label>
                 <select id="state" name="state" required>
                     <option value="" disabled selected>State</option>
                    
                 </select>
             </li>
-            <li><input type="text" id="zip" placeholder="*Zip Code" required></li>
+            <li>
+                <label for="zip">Zip Code*</label>
+                <input type="text" id="zip" required></li>
         </ul>  
         </div>   
 
@@ -256,7 +269,7 @@ stateSelect.addEventListener('change', function () {
                   </ul> 
                 </section>
 
-                <section class="radioOp"></section>
+                <section class="radioOp">
                 <h3 class="subheadList">Select Type of Property</h3>
                 <ul class="radCheck radioList">
                     <li>
@@ -269,9 +282,12 @@ stateSelect.addEventListener('change', function () {
                         <label for="commercial" class="radioLabel">Commercial</label>
                     </li>
                     </ul>
+                </section>
                   <ul>
                     <li>
-                        <textarea id="message" name="message" placeholder="Message:"></textarea>
+                    
+                        <label for="message">Write a Message</label>
+                        <textarea id="message" name="message" placeholder="Your message here"></textarea>
                         </li>
                   </ul>
                   <p class="submitMail">
