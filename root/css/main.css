@@ -1,3 +1,79 @@
+/******************************************************************************  
+TABLE OF CONTENTS
+—---------------------------------------------------------------------------------------
+1. Fonts
+2. Global Styles
+3. Header
+4. Nav
+5. Footer
+6. Homepage Styles
+7. About Page Styles
+8. Services Page Styles
+9. Services Subpages Styles
+10. Gallery Page Styles
+11. FAQ Page Styles
+12 Contact Page Styles
+13. Media Queries
+******************************************************************************/ 
+
+
+/******************************************************************************  
+1. Fonts
+******************************************************************************/ 
+
+/******************************************************************************  
+2. Global Styles
+******************************************************************************/
+
+/******************************************************************************  
+3. Header
+******************************************************************************/
+
+/******************************************************************************  
+4. Nav
+******************************************************************************/
+
+/******************************************************************************  
+5. Footer
+******************************************************************************/
+
+/******************************************************************************  
+6. Homepage Styles
+******************************************************************************/
+
+/******************************************************************************  
+7. About Page Styles
+******************************************************************************/
+
+/******************************************************************************  
+8. Services Page Styles
+******************************************************************************/
+
+/******************************************************************************  
+9. Services Subpages Styles
+******************************************************************************/
+
+/******************************************************************************  
+10. Gallery Page Styles
+******************************************************************************/
+
+/******************************************************************************  
+11. FAQ Page Styles
+******************************************************************************/
+
+/******************************************************************************  
+12. Contact Page Styles
+******************************************************************************/
+
+/******************************************************************************  
+13. Media Queries
+******************************************************************************/
+
+
+
+/******************************************************************************  
+1. Fonts
+******************************************************************************/ 
 .tenor-sans-regular {
     font-family: "Tenor Sans", serif;
     font-weight: 400;
@@ -111,8 +187,9 @@
 }
 
 
-
-/*  ...........GLOBAL STYLES...........  */
+/******************************************************************************  
+2. Global Styles
+******************************************************************************/
 
 html {
     font-size: 10px;
@@ -190,7 +267,9 @@ img {
     border: var(--border-shorthand);
 }
 
-/* Header */
+/******************************************************************************  
+3. Header
+******************************************************************************/
 header {
     background-color: var(--main-color);
     padding: 3rem 1rem;
@@ -208,7 +287,9 @@ header .nav {
     right: 2.5rem;
 }
 
-/* NAV */
+/******************************************************************************  
+4. Nav
+******************************************************************************/
 .nav {
     padding: .5rem;
     display: flex;
@@ -329,8 +410,51 @@ nav {
 nav.active {
     right: 0;
 }
+/******************************************************************************  
+5. Footer
+******************************************************************************/
 
-/* HOMEPAGE STYLING */
+footer {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+footer img {
+    margin-bottom: 1rem;
+    width: 227px;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+footer li {
+    margin: .7rem;
+}
+
+
+footer p {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    color: var(--white);
+    text-align: center;
+    line-height: .7rem;
+}
+
+i {
+    color: var(--white);
+}
+
+/******************************************************************************  
+6. Homepage Styles
+******************************************************************************/
 /* HERO SECTION */
 
 #hero {
@@ -467,56 +591,70 @@ h2 a {
     
 }
 
-/* FOOTER */
-
-footer {
-    background-color: var(--main-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    width: 100%;
-}
-
-footer img {
-    margin-bottom: 1rem;
-    width: 227px;
-}
-footer ul {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1rem;
-    justify-content: center;
-}
-
-footer li {
-    margin: .7rem;
-}
-
-
-footer p {
-    font-size: 1.5rem;
-    padding: 0 1rem;
-    color: var(--white);
-    text-align: center;
-    line-height: .7rem;
-}
-
-i {
-    color: var(--white);
-}
-
 
 /* HEADING h1 FOR ALL SUBPAGES - INCLUDES: about.html, services.html (+ sub-services), gallery.html, faq.html, contact.html */
 .pageName {
     margin-top: 10px;
 }
+/******************************************************************************  
+7. About Page Styles
+******************************************************************************/
+#aboutPage h3 {
+    margin-bottom: 1rem;
+}
 
+.aboutPage h3,
+.valueProp {
+    text-align: center;
+    padding: 0 2.5rem;
+}
 
-/* SERVICES PAGE */
+.aboutAside {
+    background: white;
+}
 
+/* RESPONSIVE VIDEO CSS */
+.video {
+    position: relative;
+    /* allows position of child of a div */
+    padding-bottom: 56.25%;
+    /* calculated out of the aspect ratio of the original video (16:9) height of 56.25% -> 9/16=0.5625, move decimal 2 spots */
+    padding-top: 2rem;
+    /* allows video header section */
+    height: 0;
+    overflow: hidden;
+    margin: 2rem;
+}
 
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* ID SELECTOR FOR LIST OF ALL CITIES */
+
+#aboutPage ul {
+    color: var(--secondary-color);
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .2rem;
+    margin-bottom: 2rem;
+    align-content: space-around;
+}
+
+#aboutPage li {
+    padding: .5rem;
+}
+/******************************************************************************  
+8. Services Page Styles
+******************************************************************************/
 .pageTitle {
     margin: 0 auto;
     width: 92%;
@@ -577,8 +715,9 @@ i {
     padding: 0 22.5px;
     line-height: 1.8;
 }
-
-/* SERVICES SUBPAGES */
+/******************************************************************************  
+9. Services Subpages Styles
+******************************************************************************/
 .landscapeSubpageImage {
     background: url('../images/landscaping-maintenance-sm.jpg') center / cover;
     height: 300px;
@@ -657,65 +796,9 @@ ul.tree {
     line-height: 1.5;
     margin-left: 4rem;
 }
-
-
-/* ABOUT PAGE STYLING */
-#aboutPage h3 {
-    margin-bottom: 1rem;
-}
-
-.aboutPage h3,
-.valueProp {
-    text-align: center;
-    padding: 0 2.5rem;
-}
-
-.aboutAside {
-    background: white;
-}
-
-/* RESPONSIVE VIDEO CSS */
-.video {
-    position: relative;
-    /* allows position of child of a div */
-    padding-bottom: 56.25%;
-    /* calculated out of the aspect ratio of the original video (16:9) height of 56.25% -> 9/16=0.5625, move decimal 2 spots */
-    padding-top: 2rem;
-    /* allows video header section */
-    height: 0;
-    overflow: hidden;
-    margin: 2rem;
-}
-
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-}
-
-/* ID SELECTOR FOR LIST OF ALL CITIES */
-
-#aboutPage ul {
-    color: var(--secondary-color);
-    list-style: inside;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: .2rem;
-    margin-bottom: 2rem;
-    align-content: space-around;
-}
-
-#aboutPage li {
-    padding: .5rem;
-}
-
-/*  GALLERY PAGE STYLING */
-
+/******************************************************************************  
+10. Gallery Page Styles
+******************************************************************************/
 .galleryPage {
     margin: 0 1rem;
 }
@@ -749,8 +832,9 @@ ul.tree {
     display: inline-block;
     position: relative;
 }
-
-/* FAQ PAGE STYLING */
+/******************************************************************************  
+11. FAQ Page Styles
+******************************************************************************/
 .question {
     max-width: 700px;
     margin-top: 3rem;
@@ -807,10 +891,9 @@ ul.tree {
 .question.active .toggle-icon {
     transform: rotate(180deg); /* Up arrow */
 }
-
-
-/* CONTACT PAGE */
-
+/******************************************************************************  
+12. Contact Page Styles
+******************************************************************************/
 /* Call us and schedule */
 .contactAside {
     display: block;
@@ -994,8 +1077,9 @@ textarea::placeholder {
     padding: 1rem 3rem;
     margin-top: 2rem;
 }
-
-/***************** LARGE SCREEN MEDIA QUERY *****************/
+/******************************************************************************  
+13. Media Queries
+******************************************************************************/
     /* SERVICES PAGE MED SCREEN MEDIA QUERY */
 
 /***** LARGE SCREEN MIN 650PX */
@@ -1482,3 +1566,15 @@ main {
     }
 
 } /* END OF SCREEN MIN 1000 */
+
+/****LARGE SCREEN MIN 1200PX ****/
+@media screen and (min-width: 1200px) {
+    header {
+        padding: 0 7rem;
+    }
+    footer {
+        padding-right: 7rem;
+        padding-left: 7rem;
+    }
+    
+}
