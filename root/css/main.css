@@ -722,18 +722,23 @@ ul.tree {
 
 
 
-/* ASIDE CLASS="aboutAside" FOR LIST OF ALL CITIES */
+/* ID SELECTOR FOR LIST OF ALL CITIES */
 
-.allCities {
+#aboutPage ul {
     color: var(--secondary-color);
     list-style: inside;
-    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .2rem;
     margin-bottom: 2rem;
-    /*    text-align: center;*/
-    /* MP TO TROUBLESHOOT THIS ABOVE LINE */
+    align-content: space-around;
 }
 
-
+#aboutPage li {
+    padding: .5rem;
+}
 
 
 
@@ -841,11 +846,6 @@ ul.tree {
 .question.active .toggle-icon {
     transform: rotate(180deg); /* Up arrow */
 }
-
-
-
-
-
 
 
 
@@ -1261,6 +1261,7 @@ textarea::placeholder {
         margin-bottom: 3rem;
     }
     
+    /* CLASS SELECTOR */
     .galleryPics {
         display: flex;
         justify-content: center;
@@ -1273,48 +1274,77 @@ textarea::placeholder {
 
 
 
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
     /* ABOUT PAGE MED SCREEN MEDIA QUERY */
+    
+    #aboutPage p {
+        max-width: 800px;
+        margin: auto;
+        padding-bottom: 3rem;
+    }
+    
+    
+    
+/*
+    #aboutPage ul {
+        max-width: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 3rem;
+    }
+*/
 
     
+
+
+/* ID SELECTOR */
+#aboutPage ul {
+    max-height: 530px;
+    align-content: center;
+    gap: 1rem;
+}
+
+/* ID SELECTOR */
+#aboutPage li {
+    padding: .5rem;
+}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
     
     
     
@@ -1799,10 +1829,12 @@ main {
         border: var(--border-shorthand);
     }
 
+    /* PSEUDO CLASS SELECTOR */
     input::placeholder {
         font-size: 1.8rem;
     }
 
+     /* PSEUDO CLASS SELECTOR */
     textarea::placeholder {
         font-size: 1.8rem;
     }
