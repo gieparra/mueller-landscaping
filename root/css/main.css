@@ -1905,6 +1905,12 @@ main {
         margin: 0 20%;
     }
 
+/* Home Page Gallery Section */
+    #gallery img {
+        max-width: 325px;
+        margin: 1rem;
+        width: 100%;
+    }
 
 
 
@@ -1926,7 +1932,6 @@ main {
 
 
 
-
     
     
     
@@ -1945,12 +1950,7 @@ main {
     
     
     
-    
-    
-    
-    
-    
-    /* FAQ PAGE */
+/* FAQ PAGE */
 
 
 
