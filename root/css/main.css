@@ -353,14 +353,12 @@ nav.active {
     text-shadow: var(--shadow);
     text-align: center;
     padding: 1.5rem;
-
 }
 
 #hero .button {
     margin: auto;
     margin-top: 11rem;
     margin-bottom: 1rem;
-
 }
 
 /* SERVICES SECTION */
@@ -369,7 +367,6 @@ nav.active {
     flex-direction: column;
     justify-items: center;
     text-align: center;
-
 }
 
 .servHomepage {
@@ -377,14 +374,12 @@ nav.active {
     color: var(--white);
     background-color: var(--main-color);
     text-transform: uppercase;
-    padding: 2rem;
-   
+    padding: 2rem;   
 }
 
 #services article {
     margin-bottom: .8rem;
     padding: 2rem;
-
 }
 
 #services img {
@@ -456,6 +451,21 @@ h2 a {
 #reviews img {
     border: none;
 }
+/*Scroll back to top button */
+.carrot {
+    padding: 3rem;
+    background: var(--white);
+    width: 1200px;
+    margin-bottom: 4rem;
+}
+.carrot .button {
+    float: right;
+    margin-right: 7rem;
+    border-radius: 50%;
+    height: 7.2rem;
+    width: 7.2rem;
+    
+}
 
 /* FOOTER */
 
@@ -496,7 +506,6 @@ footer p {
 i {
     color: var(--white);
 }
-
 
 
 /* HEADING h1 FOR ALL SUBPAGES - INCLUDES: about.html, services.html (+ sub-services), gallery.html, faq.html, contact.html */
@@ -594,27 +603,6 @@ i {
     display: flex;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .servicesSubpages .valueProp {
     text-align: center;
     margin: 1rem;
@@ -671,17 +659,6 @@ ul.tree {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ABOUT PAGE STYLING */
 #aboutPage h3 {
     margin-bottom: 1rem;
@@ -719,9 +696,6 @@ ul.tree {
 
 }
 
-
-
-
 /* ID SELECTOR FOR LIST OF ALL CITIES */
 
 #aboutPage ul {
@@ -739,9 +713,6 @@ ul.tree {
 #aboutPage li {
     padding: .5rem;
 }
-
-
-
 
 /*  GALLERY PAGE STYLING */
 
@@ -778,16 +749,6 @@ ul.tree {
     display: inline-block;
     position: relative;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* FAQ PAGE STYLING */
 .question {
@@ -846,155 +807,6 @@ ul.tree {
 .question.active .toggle-icon {
     transform: rotate(180deg); /* Up arrow */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* CONTACT PAGE */
@@ -1183,10 +995,6 @@ textarea::placeholder {
     margin-top: 2rem;
 }
 
-
-
-/* end of submit button */
-
 /***************** LARGE SCREEN MEDIA QUERY *****************/
     /* SERVICES PAGE MED SCREEN MEDIA QUERY */
 
@@ -1243,14 +1051,6 @@ textarea::placeholder {
     }
 
     /* GALLERY PAGE MED SCREEN MEDIA QUERY */
-
-/*
-    #galleryPage .galleryPics img {
-        max-width: 100%;
-        height: auto;
-        justify-content: space-between;
-    }    
-*/
     
     #galleryPage ul {
         max-width: 1050px;
@@ -1272,8 +1072,6 @@ textarea::placeholder {
         margin: 0;
     }
 
-
-
     /* ABOUT PAGE MED SCREEN MEDIA QUERY */
     
     #aboutPage p {
@@ -1282,22 +1080,6 @@ textarea::placeholder {
         padding-bottom: 3rem;
     }
     
-    
-    
-/*
-    #aboutPage ul {
-        max-width: 500px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        justify-content: center;
-        margin: auto;
-        padding-bottom: 3rem;
-    }
-*/
-
-    
-
 
 /* ID SELECTOR */
 #aboutPage ul {
@@ -1310,81 +1092,6 @@ textarea::placeholder {
 #aboutPage li {
     padding: .5rem;
 }
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-    
-    
-    
-    
-    
-    
-    
     
     } /* END OF SCREEN MIN 650 */
 
@@ -1417,26 +1124,6 @@ textarea::placeholder {
             height: 500px;
             display: flex;
             }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
         div.servicesSubpages {
             display: grid;
@@ -1510,58 +1197,6 @@ textarea::placeholder {
     .servicesHP-imageRight h2 {
         align-self: end;
     }
-/* End of home page services section */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 } /* END OF SCREEN MIN 750 */
     
@@ -1619,7 +1254,6 @@ textarea::placeholder {
         text-align: right;
     }
 
-
     /* Home Page Gallery Section */
     #gallery {
         padding: 2rem;
@@ -1647,70 +1281,6 @@ textarea::placeholder {
     #gallery p {
         margin: 3rem auto;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-/* End of home page Gallery section */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 } /* END OF SCREEN MIN 800 */
 
@@ -1895,49 +1465,6 @@ main {
         margin: -.5rem;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 } /* END OF SCREEN MIN 900 */
 
 
@@ -1954,85 +1481,4 @@ main {
         width: 100%;
     }
 
-/* Navigation Menu 1000px*/
-   
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-/* FAQ PAGE */
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
 } /* END OF SCREEN MIN 1000 */
-
-
-
-
-
-
-
-
-
-
-
-
-
