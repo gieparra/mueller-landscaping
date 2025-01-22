@@ -91,62 +91,96 @@
         <section class="faqPage">
             <h1 class="pageName">Frequently Asked Questions</h1>
             <hr class="pageTitle">
+        
 
             <!-- QUESTION 1 -->
             <article class="question">
-                <h3>What are the services you provide?</h3>
-                <p>Mueller Landscape Inc. offers the following <a href="services.html">services</a>:</p>
+                <h3>
+                    What are the services you provide? 
+                    <span class="toggle-icon"></span>
+                </h3>
+                <div class="content">
+                    <p>Mueller Landscape Inc. offers the following <a href="services.html">services</a>:</p>
                     <ul>
                         <li>Lawn and Landscape Maintenance</li>
                         <li>Tree Trimming</li>
                         <li>Sprinkler Installation and Repair</li>
                         <li>Commercial Services</li>
                     </ul>
-                <p>Custom services are available upon request.</p>
+                    <p>Custom services are available upon request.</p>
+                </div>
                 <hr>
             </article>
             
             <!-- QUESTION 2 -->            
             <article class="question">
-                <h3>Does it cost anything to set up a consultation?</h3>
-                <p>No. We offer free consultations.</p>
-                <hr>
+                <h3>Does it cost anything to set up a consultation?<span class="toggle-icon"></span></h3>
+                <div class="content">
+                    <p>No. We offer free consultations.</p>
+                </div>
+                    <hr>
+                
             </article>
             
             <!-- QUESTION 3 -->            
             <article class="question">
-                <h3>Where can I see pricing?</h3>
+                <h3>Where can I see pricing?<span class="toggle-icon"></span></h3>
+                <div class="content">
                 <p>We have standard pricing included on our <a href="services.html">services</a> page. For an accurate quote for your property, please visit our <a href="contact.html">contact</a> page and fill out the form. Someone from our team will contact you to schedule a free consultation and provide an accurate quote.</p>
+                </div>
                 <hr>
             </article>
             
             <!-- QUESTION 4 -->            
             <article class="question">
-                <h3>Do you provide sprinkler repair services?</h3>
+                <h3>Do you provide sprinkler repair services?<span class="toggle-icon"></span></h3>
+                <div class="content">
                 <p>Yes, we do. Please visit our <a href="sprinkler.html">sprinkler services</a> page.</p>
+                </div>
                 <hr>
             </article>
             
             <!-- QUESTION 5 -->            
             <article class="question">
-                <h3>Is it possible to have service done today?</h3>
+                <h3>Is it possible to have service done today?<span class="toggle-icon"></span></h3>
+                <div class="content">
                 <p>We may be able to accommodate your request for service today, contingent upon your location and crew availability in your area. To inquire about same-day service, please contact us at <a href="tel:+16193881212">(619) 388-1212</a>. Kindly note that our operating hours are Monday to Friday from 8:00 am to 5:00 pm.</p>
+                </div>
                 <hr>
             </article>
             
             <!-- QUESTION 6 -->            
             <article class="question">
-                <h3>What is your billing and payment process?</h3>
+                <h3>What is your billing and payment process?<span class="toggle-icon"></span></h3>
+                <div class="content">
                 <p>We accept credit cards and checks for all services. We charge your credit card for the balance due at the end of the day we provide service. If paying by check, customers will leave a check each time service is provided.</p>
+                </div>
                 <hr>
             </article>
             
             <!-- QUESTION 7 -->            
             <article class="question">
-                <h3>Where can I read more reviews?</h3>
+                <h3>Where can I read more reviews?<span class="toggle-icon"></span></h3>
+                <div class="content">
                 <p>Click <a href="https://www.google.com/search?q=mueller+landscape+inc&oq=mueller+landsc&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgYIAhBFGDkyBggDECMYJzISCAQQLhgUGK8BGMcBGIcCGIAEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRhB0gEIMjEyNmowajeoAgCwAgA&sourceid=chrome&ie=UTF-#lrd=0x80dbe29fbf376841:0x84dad4da91339251,1,,,," target="_blank">here</a> to read more reviews on Google.</p>
+            </div>
             </article>
         </section>
+
+        <script>
+            document.querySelectorAll('.question h3').forEach(h3 => {
+    h3.addEventListener('click', () => {
+        const article = h3.parentElement;
+        const content = article.querySelector('.content');
+        
+        // Toggle visibility and the active class
+        article.classList.toggle('active');
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+
+        </script>
 
         <!-- REVIEWS SECTION -->
 

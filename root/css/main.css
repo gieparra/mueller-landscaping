@@ -786,61 +786,61 @@ ul.tree {
 
 /* FAQ PAGE STYLING */
 .question {
-    max-width: 800px;
+    max-width: 700px;
+    margin-top: 3rem;
+    display: block;
+    margin: auto;
 }
-
+#faqPage h3 {
+    text-transform: uppercase;
+}
+.faqPage {
+    margin-bottom: 7rem;
+    padding: 2rem;
+}
 #faqPage h3,
 #faqPage p {
     margin: 2rem;
 }
-
-#faqPage hr {
-    width: 90%;
-    color: white;
-    /*    margin: 0 auto;*/
-    color: var(--main-color);
-    /* MP LOOK INTO CHANGING THIS TO BORDER BOTTOM   */
+.question hr {
+    width: 100%;
+    border: var(--border-shorthand);
+    margin-bottom: 4rem;
 }
-
 .question ul {
     list-style: inside;
     margin-left: 2rem;
 }
+#faqPage .pageTitle {
+    margin-bottom: 4rem;
+}
+/* Initially hides the content */
+.content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
 
+/* Styles the toggle icon */
+.toggle-icon {
+    float: right;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath d="M7 10l5 5 5-5z" fill="%23676767" /%3E%3C/svg%3E'); /* Down arrow */
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.3s ease;
+}
 
+/* Expanded state styling */
+.question.active .content {
+    display: block;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.question.active .toggle-icon {
+    transform: rotate(180deg); /* Up arrow */
+}
 
 
 
@@ -1912,10 +1912,10 @@ main {
         width: 100%;
     }
 
-
-
-
-
+/* Navigation Menu 1000px*/
+   
+    
+    
 
 
 
