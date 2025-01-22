@@ -1599,7 +1599,7 @@ textarea::placeholder {
         margin: 2rem auto;
     }
     #gallery img {
-        max-width: 325px;
+        max-width: 250px;
         margin: 1rem;
         width: 100%;
     }
