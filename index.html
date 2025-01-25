@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport">
+        <title>Mueller Landscaping</title>
+        
+        <!--    fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="text/css">
+        <!--added fontawesome icons-->
+    
+        <!--   stylesheets -->
+    
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/mainMini.css" rel="stylesheet" type="text/css">
+    
+        <!-- jquery after stylesheets -->
+    
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    
+        <script>
+            $(document).ready(function() {
+            });
+    
+        </script>
+    </head>
+
+<!-- START OF WEBPAGE CONTENT -->
+    
+    <body>
+        <header>
+
+            
+            <a href="#"><img src="images/logo.png" alt="mueller landscape logo"></a>
+                
+         
+         <!-- NAVIGATION -->
+         <nav>
+            
+         
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li>
+                    <a class="menu" href="pages/services.html" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <ul class="submenu">
+                        <li><a href="pages/landscape.html">Lawn & Landscape</a></li>
+                        <li><a href="pages/tree.html">Tree Services</a></li>
+                        <li><a href="pages/sprinkler.html">Sprinkler Services</a></li>
+                        <li><a href="pages/commercial.html">Commercial Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/faq.html">FAQ</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="tel:+16193881212">(619) 388-1212</a></li>  
+            </ul>
+       
+        </nav> 
+
+        <section class="nav">
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </section>
+    
+        <script src="./app.js"></script>
+        </header>
+
+        <script>
+            const hamMenu = document.querySelector(".ham-menu");
+
+            const offScreenMenu = document.querySelector("nav");
+
+            hamMenu.addEventListener("click", () => {
+            hamMenu.classList.toggle("active");
+            offScreenMenu.classList.toggle("active");
+});
+        </script>
+          
+        <!-- MAIN CONTENT -->  
+        
+        <!-- HERO IMAGE SECTION WITH BUTTON-->
+        
+        <main>   
+            <section id="hero">
+                  <article>
+                  <p>Transform your outdoor space into a beautiful landscape</p>
+                  <a href="pages/contact.html" class="button">Get A Quote</a>
+                  </article>
+            </section>
+            
+            <!-- SERVICES SECTION -->
+            <h1 class="servHomepage">Services</h1>
+            <section id="services">
+               
+                    <article class="servicesHP-imageLeft">
+                        <img src="images/landscaping-maintenance-sm.jpg" alt="landscaping">
+                        <h2><a href="pages/landscape.html">Lawn & Landscape</a></h2>
+                        <p>Regular or ongoing lawn and landscape maintenance for a beautiful yard without the work.</p>
+                    </article>
+                    <article class="servicesHP-imageRight">
+                        <img src="images/tree-trimming-sm.jpg" alt="tree trimming">
+                        <h2><a href="pages/tree.html">Tree Services</a></h2>
+                        <p>Regular tree trimming, stump grinding and removal, and pruning the trees on your property for optimum appearance, health, and vitality.</p>
+                    </article>
+                    <article class="servicesHP-imageLeft">
+                        <img src="images/sprinkler-repair-sm.jpg" alt="sprinkler repair">
+                        <h2><a href="pages/sprinkler.html">Sprinkler Services</a></h2>
+                        <p>Our sprinkler systems help you save water, money, and offer peace of mind. Keep your system in top shape with repair services.</p>
+                    </article>
+                    <article class="servicesHP-imageRight">
+                        <img src="images/commercial-maintenance-sm.jpg" alt="commercial maintenance">
+                        <h2><a href="pages/commercial.html">Commercial Services</a></h2>
+                        <p>We make property managers look good. We maintain constant communication and take monthly photos to monitor the properties.</p>
+                    </article>
+            </section>
+            
+            <!-- GALLERY SECTION -->
+            
+            <section id="gallery">   
+                <h1>Gallery</h1>
+                <article class="galleryRow">
+                    <img src="images/landscaped-garden.jpg" alt="front yard landscape">
+                    <img src="images/maintained-garden.jpg" alt="green lawn with trees">
+                    <img src="images/walkway-landscaping.jpg" alt="walkway garden plantings">
+                </article>    
+                <p><a href="pages/gallery.html" class="button">View Gallery</a></p>
+            </section>
+            
+            <!-- SERVICE AREA SECTION -->
+            
+            <section id="serviceArea">
+                <h1>Service Area</h1>
+                <img src="images/mueller-service-area.png" alt="service area map">
+                <p><a href="pages/about.html" class="button">View All Cities</a></p>
+            </section>
+
+            <section class="carrot">
+                <p><a href="#" class="button">
+                    <svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="3" y1="16" x2="10" y2="9" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="10" y1="9" x2="17" y2="16" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </a></p>
+            </section>
+            
+            
+        </main>
+          
+        <!-- FOOTER, NOT SURE IF ARTICLES WILL ACHIEVE LAYOUT WE WANT W/ FLEXBOX-->
+        
+        <footer>
+            
+           <article class="footerLeft">
+               <img src="images/logo.png" alt="mueller landscape logo">
+                <p class="phone">(619) 391-3887</p>
+                <p class="address">11774 Hi Ridge Rd, Lakeside, CA</p>
+            </article>
+            <article class="footerCenter">    
+                <p class="days">Open Monday - Friday</p>
+                <p class="hours">8AM - 5PM</p>
+            </article>
+            <article class="footerRight">
+               <ul>
+                  <li><a href="https://www.facebook.com/MuellerLandscapeInc" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/muellerlandscapeinc" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/MuelleLandscape" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>  
+                <p>Copyright 2025</p>
+            </article>
+       
+            
+        </footer>
+
+        
+    </body>
+    
+</html>
