@@ -55,11 +55,12 @@ https://gieparra.github.io/mueller-landscaping/index.html
 Or download the project and open index.html in your browser.
 
 👥 Team Members
+
 Coulas, Krista — Web Development / Services page and 3 subpages
 
 Morey, Mariapaz — Web Development / About, Gallery, FAQ pages
 
-Parra, Angelica — Web Development / Home page, Contact page, and FAQ page
+Parra, Angie — Web Development / Home page, Contact page, and FAQ page
 
 📚 Lessons Learned
 Through this project, we practiced:
